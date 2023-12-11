@@ -14,10 +14,24 @@ header {
     font-size: 36px;
 }
 
+head {
+    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
     width: 100%;
     margin: 0;
     font-size: 18px;
+    
+    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .main {
