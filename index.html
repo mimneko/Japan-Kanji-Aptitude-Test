@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <!-- https://notetoself-dy.com/javascript-csv/ -->
 
 <head>
     <meta charset="utf-8">
+    <meta http-equiv="content-language" content="ja">
     <title>漢検準１級</title>
     <link rel="stylesheet" type="text/css" href="semi-1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
     <script src="js/importCsv.js"></script>
+    <script src="js/buttonAction.js"></script>
 
     <!-- header -->
     <header>
@@ -20,6 +23,8 @@
     
     <div class="main">
         <p>JavaScriptでCSVの取り込みサンプル</p>
+        <div class="btn" id="next">次へ</div>
+        <p id="question">問題文</p>
         <p>リスト形式で出力します。</p>
         <table id="output">
         </table>
