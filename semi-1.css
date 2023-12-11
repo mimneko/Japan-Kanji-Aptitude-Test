@@ -20,11 +20,8 @@ body {
     font-size: 18px;
 }
 
-p {
-    text-align: center;
-}
-
 .main {
+    text-align: center;
     width: auto;
     margin: 50px auto;
 }
