@@ -1,5 +1,8 @@
 header {    
-    background-color: red;
+    background-color: #1A3260;
+    text-align: center;
+    color: #fafafa;
+    font-size: 36px;
 }
 
 body {
@@ -21,12 +24,12 @@ table {
     border-top: solid 1px #778ca3;
 }
 
-table tr:nth-child(2n+1) {
-    background: #e9faf9;
+table tr:nth-child(2n) {
+    background: #CCCDD2;
 }
 
-table th {
-    font-size: 36px;
+table tr:nth-child(2n+1) {
+    background: #E7E8EA;
 }
 
 table td {
