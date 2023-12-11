@@ -48,6 +48,26 @@ table {
     border-top: solid 1px var(--white);
 }
 
+table tr *:nth-child(1){
+  display: none;
+}
+
+table tr *:nth-child(2){
+  display: none;
+}
+
+table tr *:nth-child(4){
+  display: none;
+}
+
+table tr *:nth-child(5){
+  display: none;
+}
+
+table tr *:nth-child(6){
+  display: none;
+}
+
 table tr:nth-child(2n) {
     background: var(--light-gray);
 }
