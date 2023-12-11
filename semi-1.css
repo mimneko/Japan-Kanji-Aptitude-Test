@@ -1,6 +1,15 @@
+:root {
+    --navy: #1A3260;
+    --light-navy: #C2D1EE;
+    --white: #fafafa;
+    --light-gray: #CCCDD2;
+    --gray: #E7E8EA;
+    --black: #2C2C2C;
+}
+
 header {    
-    background-color: #1A3260;
-    color: #fafafa;
+    background-color: var(--navy);
+    color: var(--white);
     text-align: center;
     font-size: 36px;
 }
@@ -12,7 +21,7 @@ body {
 }
 
 .main {
-    width: 600px;
+    width: auto;
     margin: 50px auto;
 }
 
@@ -21,35 +30,35 @@ table {
     text-align: center;
     border-collapse: collapse;
     border-spacing: 0;
-    border-top: solid 1px #778ca3;
+    border-top: solid 1px var(--white);
 }
 
 table tr:nth-child(2n) {
-    background: #CCCDD2;
+    background: var(--light-gray);
 }
 
 table tr:nth-child(2n+1) {
-    background: #E7E8EA;
+    background: var(--gray);
 }
 
 table tr:nth-child(1) {
-    background-color: #1A3260;
-    color: #fafafa;
+    background-color: var(--navy);
+    color: var(--white);
 }
 
 table td {
     padding: 10px;
-    border-bottom: solid 1px #778ca3;
+    border-bottom: solid 1px var(--white);
 }
 
 .btn {
     display: inline-block;
     cursor: pointer;
     padding: 8px 30px;
-    background-color: #C2D1EE;
-    box-shadow: 0px 5px #1A3260;
+    background-color: var(--light-navy);
+    box-shadow: 0px 5px var(--navy);
     border-radius: 3px;
-    color: #1A3260;
+    color: var(--navy);
     font-size: 10px;
 
     /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
