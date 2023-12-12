@@ -27,6 +27,9 @@ body {
     width: 100%;
     margin: 0;
     font-size: 18px;
+
+    /* https://saycon.co.jp/portal-for-newcomer/html-lesson/html-lesson2 */
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, sans-serif;
     
     /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
     -webkit-user-select: none;
@@ -110,3 +113,21 @@ table td {
     top: 5px;
     box-shadow: none;
 }
+
+/* https://saruwakakun.com/html-css/reference/list-style-type */
+h2 {
+    background: var(--gray);
+    border-left: solid var(--navy) 5px;
+    padding: 14px 12px;
+    border-bottom: solid 3px var(--light-gray);
+    clear: both;
+    text-align: left;
+}
+
+h4 {
+    border-left: solid var(--navy) 2px;
+    padding: 14px 12px;
+    clear: both;
+    text-align: left;
+}
+
