@@ -138,4 +138,19 @@ h4 {
 ol {
     text-align: left;
 }
-    
+
+/* https://note.com/ryotodo/n/n58c452d3660c */
+.wrap {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:767px) {
+    .wrap {
+        width: 100%;
+        max-width: inherit;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
