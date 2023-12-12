@@ -132,7 +132,7 @@ h4 {
 }
 
 .underline {
-    text-decoration:underline solid var(--black);
+    text-decoration:underline solid var(--black) 3px;
 }
 
 ol {
