@@ -95,7 +95,7 @@ table td {
     box-shadow: 0px 5px var(--navy);
     border-radius: 3px;
     color: var(--navy);
-    font-size: 10px;
+    font-size: 18px;
 
     /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
     -webkit-user-select: none;
