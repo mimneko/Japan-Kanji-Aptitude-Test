@@ -9,12 +9,16 @@ $(function () {
     $("#next").click(function () {
         $("#question").text("【問題】"+arr[getRandomIntInclusive(2,5396)][6]);
     })
-
 });
 
 $(function () {
     $("#a1-1").click(function () {
         $("#a1-1").html('<span class="answer">けつがん</span>');
     })
+});
 
+$(function () {
+    $("#a1-2").click(function () {
+        $("#a1-2").html('<span class="answer">砧声</span>');
+    })
 });
