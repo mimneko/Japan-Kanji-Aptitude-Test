@@ -38,7 +38,7 @@ body {
     user-select: none;
 }
 
-.main {
+main {
     text-align: center;
     width: auto;
     margin: 50px auto;
