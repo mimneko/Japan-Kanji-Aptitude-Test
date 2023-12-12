@@ -160,3 +160,8 @@ ol {
         padding-right: 20px;
     }
 }
+
+.answer {
+    font-weight: bold;
+    color: var(--accentcolor);
+}
