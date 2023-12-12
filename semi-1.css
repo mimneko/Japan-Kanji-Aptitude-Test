@@ -5,10 +5,12 @@
     --light-gray: #CCCDD2;
     --gray: #E7E8EA;
     --black: #2C2C2C;
+    --main-deep: var(--navy);
+    --main-light: var(--light-navy);
 }
 
 header {    
-    background-color: var(--navy);
+    background-color: var(--main-deep);
     color: var(--white);
     text-align: center;
     vertical-align : middle;
@@ -81,7 +83,7 @@ table tr:nth-child(2n+1) {
 }
 
 table tr:nth-child(1) {
-    background-color: var(--navy);
+    background-color: var(--main-deep);
     color: var(--white);
 }
 
@@ -94,8 +96,8 @@ table td {
     display: inline-block;
     cursor: pointer;
     padding: 8px 30px;
-    background-color: var(--light-navy);
-    box-shadow: 0px 5px var(--navy);
+    background-color: var(--main-light);
+    box-shadow: 0px 5px var(--main-deep);
     border-radius: 3px;
     color: var(--navy);
     font-size: 18px;
@@ -117,7 +119,7 @@ table td {
 /* https://saruwakakun.com/html-css/reference/list-style-type */
 h2 {
     background: var(--gray);
-    border-left: solid var(--navy) 5px;
+    border-left: solid var(--main-deep) 5px;
     padding: 14px 12px;
     border-bottom: solid 3px var(--light-gray);
     clear: both;
@@ -125,7 +127,7 @@ h2 {
 }
 
 h4 {
-    border-left: solid var(--navy) 2px;
+    border-left: solid var(--main-deep) 2px;
     padding: 14px 12px;
     clear: both;
     text-align: left;
