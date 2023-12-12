@@ -19,6 +19,6 @@ $(function () {
 
 $(function () {
     $("#a1-2").click(function () {
-        $("#a1-2").html('<span class="answer">砧声</span>');
+        $("#a1-2").html('<span class="answer">ちんせい</span>');
     })
 });
