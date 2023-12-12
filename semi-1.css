@@ -5,8 +5,10 @@
     --light-gray: #CCCDD2;
     --gray: #E7E8EA;
     --black: #2C2C2C;
-    --main-deep: var(--navy);
-    --main-light: var(--light-navy);
+    --orange: #EA5506;
+    --maincolor-deep: var(--navy);
+    --maincolor-light: var(--light-navy);
+    --accentcolor: var(--orange);
 }
 
 header {    
@@ -161,7 +163,42 @@ ol {
     }
 }
 
+.answer-btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 30px;
+    background-color: var(--light-navy);
+    border-radius: 3px;
+    color: var(--navy);
+    font-size: 18px;
+    border: solid 1px var(--light-navy);
+
+    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
 .answer {
     font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 30px;
+    border-radius: 3px;
     color: var(--accentcolor);
+    font-size: 18px;
+    border: solid 1px var(--accentcolor);
+
+    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ol li {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
