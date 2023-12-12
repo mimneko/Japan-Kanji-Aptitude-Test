@@ -11,6 +11,7 @@ header {
     background-color: var(--navy);
     color: var(--white);
     text-align: center;
+    vertical-align : middle;
     font-size: 36px;
 }
 
