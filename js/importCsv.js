@@ -1,4 +1,6 @@
-        window.onload = function () {
+let arr = [];
+
+window.onload = function () {
             //出力場所を探す
             let output = document.getElementById("output");
             //CSVの指定
@@ -28,7 +30,6 @@
 
             //CSVを配列に格納 dataArrはレスポンス
             function csvArr(dataArr) {
-                let arr = [];
                 let list = dataArr.split('\n');
                 //帰ってきているレスポンスを配列に格納する
                 for (let i = 0; i < list.length; i++) {
