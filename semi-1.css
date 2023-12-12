@@ -134,3 +134,8 @@ h4 {
 .underline {
     text-decoration:underline solid var(--black);
 }
+
+ol {
+    text-align: left;
+}
+    
