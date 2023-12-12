@@ -11,3 +11,10 @@ $(function () {
     })
 
 });
+
+$(function () {
+    $("#a1-1").click(function () {
+        $("#a1-1").html('<span class="answer">けつがん</span>');
+    })
+
+});
