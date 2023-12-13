@@ -209,6 +209,10 @@ ol {
     user-select: none;
 }
 
+.options {
+    border: solid 1px var(--black);
+}
+
 ol li {
     padding-top: 10px;
     padding-bottom: 10px;
