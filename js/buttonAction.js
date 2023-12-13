@@ -7,18 +7,20 @@ function getRandomIntInclusive(min, max) {
 
 $(function () {
     $("#next").click(function () {
-        $("#question").text("【問題】"+arr[getRandomIntInclusive(2,5396)][6]);
+        $("#question").text("【問題】" + arr[getRandomIntInclusive(2, 5396)][6]);
     })
 });
 
 $(function () {
-    $("#a1-1").click(function () {
-        $("#a1-1").html('<span class="answer">けつがん</span>');
+    let htmlId = "#a1-1"
+    $(htmlId).click(function () {
+        $(htmlId).html('<span class="answer">けつがん</span>');
     })
 });
 
 $(function () {
-    $("#a1-2").click(function () {
-        $("#a1-2").html('<span class="answer">ちんせい</span>');
+    let htmlId = "#a1-2"
+    $(htmlId).click(function () {
+        $(htmlId).html('<span class="answer">ちんせい</span>');
     })
 });
