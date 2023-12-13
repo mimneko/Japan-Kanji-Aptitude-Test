@@ -11,6 +11,17 @@
     --accentcolor: var(--orange);
 }
 
+/* https://www.sejuku.net/blog/99964 */
+* {
+	float: none;
+	position: static;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 header {    
     background-color: var(--maincolor-deep);
     color: var(--white);
