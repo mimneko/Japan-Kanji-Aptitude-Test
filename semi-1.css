@@ -154,6 +154,12 @@ h4 {
     -webkit-text-decoration:underline solid var(--black) 3px;
 }
 
+.underline {
+    text-decoration:underline solid var(--black) 2px;
+    /* https://note.com/wordpress1234/n/nf98a776a7cf5 */
+    -webkit-text-decoration:underline solid var(--black) 2px;
+}
+
 p {
     text-align: left;
 }
