@@ -180,7 +180,7 @@ ol {
     padding: 8px 30px;
     background-color: var(--maincolor-light);
     border-radius: 3px;
-    color: var(--maincolor-deep)
+    color: var(--maincolor-deep);
     font-size: 18px;
     border: solid 1px var(--maincolor-light);
 
