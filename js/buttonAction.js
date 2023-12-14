@@ -19,7 +19,8 @@ $(function () {
 //});
 
 //$(function () {
-    let htmlId = "#a1-2"
+    //let 
+    htmlId = "#a1-2"
     $(htmlId).click(function () {
         $(htmlId).html('<span class="answer">ちんせい</span>');
     })
