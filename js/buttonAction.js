@@ -16,11 +16,10 @@ $(function () {
     $(htmlId).click(function () {
         $(htmlId).html('<span class="answer">けつがん</span>');
     })
-//});
+});
 
-//$(function () {
-    //let 
-    htmlId = "#a1-2"
+$(function () {
+    let htmlId = "#a1-2"
     $(htmlId).click(function () {
         $(htmlId).html('<span class="answer">ちんせい</span>');
     })
