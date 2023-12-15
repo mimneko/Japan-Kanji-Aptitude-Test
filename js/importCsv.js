@@ -1,8 +1,10 @@
 let arr = [];
 
+// https://notetoself-dy.com/javascript-csv/
 window.onload = function () {
 	//出力場所を探す
-	let output = document.getElementById("output");
+	// <table id="output"></table>
+	//let output = document.getElementById("output");
 	//CSVの指定
     getCsv('semi-1.csv');
 
@@ -52,6 +54,6 @@ window.onload = function () {
 
         //HTMLに出力
         // https://opty-life.com/study/program/cannot-set-property-innerhtml-of-null/
-        output.innerHTML = insert;
+        //output.innerHTML = insert;
     }
 }
