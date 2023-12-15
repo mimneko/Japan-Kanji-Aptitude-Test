@@ -27,3 +27,7 @@ $(function () {
 
     $("#a1-3").html('<span class="answer">' + arr[getRandomIntInclusive(2, 5396)][6] + '</span>');
 });
+
+document.getElementById("#a1-4").onclick = function() {
+  this.html('<span class="answer">ちんせい</span>');
+};
