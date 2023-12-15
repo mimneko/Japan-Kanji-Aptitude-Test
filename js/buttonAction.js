@@ -25,5 +25,5 @@ $(function () {
         $(htmlId).html('<span class="answer">ちんせい</span>');
     })
 
-    $("#a1-3").html('<span class="answer">arr[getRandomIntInclusive(2, 5396)][6]</span>');
+    $("#a1-3").html('<span class="answer">' + arr[getRandomIntInclusive(2, 5396)][6] + '</span>');
 });
