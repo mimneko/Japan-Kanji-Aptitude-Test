@@ -26,7 +26,10 @@ $(function () {
 });
 
 $(function () {
-    $("#a1-3").html('<span class="answer">' + arr[getRandomIntInclusive(2, 5396)][6] + '</span>');
+    let htmlId = "#a1-3"
+    $(htmlId).click(function () {
+    $(htmlId).html('<span class="answer">' + arr[getRandomIntInclusive(2, 5396)][6] + '</span>');
+    })
 });
 /*
 document.getElementById("#a1-4").onclick = function() {
