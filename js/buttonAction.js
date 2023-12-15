@@ -14,7 +14,7 @@ $(function () {
 //$(function () {
     let htmlId = "#a1-1"
     $(htmlId).click(function () {
-        this.html('<span class="answer">けつがん</span>');
+        $(htmlId).html('<span class="answer">けつがん</span>');
     })
 //});
 
@@ -22,9 +22,11 @@ $(function () {
     //let 
     htmlId = "#a1-2"
     $(htmlId).click(function () {
-        this.html('<span class="answer">ちんせい</span>');
+        $(htmlId).html('<span class="answer">ちんせい</span>');
     })
+});
 
+$(function () {
     $("#a1-3").html('<span class="answer">' + arr[getRandomIntInclusive(2, 5396)][6] + '</span>');
 });
 
