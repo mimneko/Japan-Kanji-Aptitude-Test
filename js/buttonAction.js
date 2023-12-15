@@ -9,9 +9,9 @@ $(function () {
     $("#next").click(function () {
         $("#question").text("【問題】" + arr[getRandomIntInclusive(2, 5396)][6]);
     })
-//});
+});
 
-//$(function () {
+$(function () {
     let htmlId = "#a1-1"
     $(htmlId).click(function () {
         $(htmlId).html('<span class="answer">けつがん</span>');
