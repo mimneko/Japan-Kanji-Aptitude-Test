@@ -1,4 +1,5 @@
 :root {
+    /* 色 */
     --navy: #1A3260;
     --light-navy: #C2D1EE;
     --white: #fafafa;
@@ -9,6 +10,9 @@
     --maincolor-deep: var(--navy);
     --maincolor-light: var(--light-navy);
     --accentcolor: var(--orange);
+
+    /* 定数 */
+    --screen-padding: 20px;
 }
 
 /* https://www.sejuku.net/blog/99964 */
@@ -173,14 +177,16 @@ ol {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+	padding-left: var(--screen-padding);
+	padding-right: var(--screen-padding);
 }
 
 @media screen and (max-width:767px) {
     .wrap {
         width: 100%;
         max-width: inherit;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: var(--screen-padding);
+        padding-right: var(--screen-padding);
     }
 }
 
