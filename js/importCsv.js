@@ -51,6 +51,7 @@ window.onload = function () {
         });
 
         //HTMLに出力
+	// https://opty-life.com/study/program/cannot-set-property-innerhtml-of-null/
         output.innerHTML = insert;
     }
 }
