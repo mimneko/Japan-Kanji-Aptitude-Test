@@ -4,9 +4,9 @@ let arr = [];
 window.onload = function () {
 	//出力場所を探す
 	// <table id="output"></table>
-	//let output = document.getElementById("output");
+	let output = document.getElementById("output");
 	//CSVの指定
-    getCsv('semi-1.csv');
+    getCsv('assets/2.csv');
 
     //CSVの取り込み
     function getCsv(data) {
@@ -54,6 +54,6 @@ window.onload = function () {
 
         //HTMLに出力
         // https://opty-life.com/study/program/cannot-set-property-innerhtml-of-null/
-        //output.innerHTML = insert;
+        output.innerHTML = insert;
     }
 }
