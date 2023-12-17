@@ -1,2 +1,2 @@
 # Japan-Kanji-Aptitude-Test
-漢検勉強用Webサイト
+漢検準1級勉強用Webサイト
