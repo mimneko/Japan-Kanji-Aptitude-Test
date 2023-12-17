@@ -7,7 +7,7 @@ function getRandomIntInclusive(min, max) {
 
 $(function () {
     $("#next").click(function () {
-        $("#question").text("【問題】" + arr[getRandomIntInclusive(2, 5)][0]);
+        $("#question").text("【問題】" + arr[getRandomIntInclusive(2, 5)][0] +'<span class="answer">'+ arr[getRandomIntInclusive(2, 5)][1] +'</span>'+ arr[getRandomIntInclusive(2, 5)][2]);
     })
 });
 
