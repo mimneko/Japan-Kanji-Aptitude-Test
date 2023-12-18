@@ -99,7 +99,7 @@ class RandomizedQuestions {
 
         for (let i = 0; i < array.length; i++) {
             for (let j = 0; j < arr.length; j++) arr[j] = i;
-            array[i] = arr.slice(0, arr.length);;
+            array[i] = arr.slice(0, arr.length);
         }
 
         return array;
@@ -124,7 +124,7 @@ class RandomizedQuestions {
                     //帰ってきているレスポンスを配列に格納する
                     for (let i = 0; i < list.length; i++) { // ヘッダごと読み込む
                         //arr[i] = list[i].split(',');
-                        arr.push(list[i].split(','););
+                        arr.push(list[i].split(',');
                     }
                     //console.log("行数1:"+list.length);
                     //console.log("列数1:"+arr[0].length);
