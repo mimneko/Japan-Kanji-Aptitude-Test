@@ -114,7 +114,6 @@ class RandomizedQuestions {
                         arr[i-1] = list[i].split(',');
                     }
                 } else {
-                    console.log("ファイルなし？");
                     console.error(xhr.statusText);
                 }
             }
