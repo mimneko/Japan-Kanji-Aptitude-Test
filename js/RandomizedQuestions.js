@@ -231,6 +231,9 @@ class RandomizedQuestions {
         this.indexOptions8 = this.randomArray(10);
 
         console.log("-----------");
+        var toString = Object.prototype.toString;
+        toString.call(this.tbl1_20);
+        console.log("-----------");
         console.log(this.tbl1_20);
         console.log(this.tbl1_20[0]);
         console.log("-----------");
