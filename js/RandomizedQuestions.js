@@ -107,6 +107,7 @@ class RandomizedQuestions {
                 if (xhr.status === 200) {//Done or load
                     //console.log(xhr.responseText);
                     let responce = xhr.responseText;
+                    console.log(responce);
                     //CSVを配列に格納
                     let list = responce.split('\n');
                     //帰ってきているレスポンスを配列に格納する
