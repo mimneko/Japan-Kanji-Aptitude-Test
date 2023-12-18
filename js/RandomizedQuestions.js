@@ -230,12 +230,10 @@ class RandomizedQuestions {
         this.indexOptions7_2 = this.randomArray(8);
         this.indexOptions8 = this.randomArray(10);
 
-        console.log(this.questions[0]);
-        console.log(this.tbl1_20[0][0]);
-        console.log(this.tbl1_20[0][1]);
-        console.log(this.tbl1_20[0][2]);
-        console.log(this.answers[0]);
-        console.log(this.tbl1_20[0][3]);
+        console.log("-----------");
+        console.log(this.tbl1_20);
+        console.log("-----------");
+        
         // 問題セット
         for (let i = 0; i < 20; i++) {
             let k = this.index1_20[i - 0];
