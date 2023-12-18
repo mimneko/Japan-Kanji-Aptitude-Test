@@ -144,7 +144,11 @@ class RandomizedQuestions {
                     for (let i = 1; i < list.length; i++) { // ヘッダを読み込まない
                         arr[i-1] = list[i].split(',');
                     }
-                    console.log("【おためし】"+arr[0][1]);
+                    /* 
+                    https://stackoverflow.com/questions/28933486/javascript-array-undefined-error
+                    と同様の原因によりundefinedになると思われる。
+                    */
+                    //console.log("【おためし】"+arr[0][1]);
                 } else {
                     console.error(xhr.statusText);
                 }
