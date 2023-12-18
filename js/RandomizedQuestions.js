@@ -79,7 +79,7 @@ class RandomizedQuestions {
         this.randomize();
     }
 
-    
+    /*
     importCsv(csvFile) {
         // 仮テーブル
         let array = [...Array(1000).keys()];
@@ -92,7 +92,7 @@ class RandomizedQuestions {
 
         return array;
     }
-    /*
+    */
     importCsv(csvFile) {
         // https://notetoself-dy.com/javascript-csv/
 
@@ -127,7 +127,6 @@ class RandomizedQuestions {
 
         return arr;
     }
-    */
 
     sizeQAs() {
         return this.a_id.length;
