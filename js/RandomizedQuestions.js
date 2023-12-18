@@ -214,17 +214,17 @@ class RandomizedQuestions {
 
     randomize() {
         // 乱数生成
-        this.index1_20 = this.randomArray(871 - 1);
-        this.index1_30 = this.randomArray(601 - 1);
-        this.index2 = this.randomArray(357 - 1);
-        this.index3 = this.randomArray(206 - 1);
-        this.index4 = this.randomArray(83 - 1);
-        this.index5 = this.randomArray(649 - 1);
-        this.index6 = this.randomArray(95 - 1);
-        this.index7 = this.randomArray(400 - 1);
-        this.index8_5 = this.randomArray(319 - 1);
-        this.index8_10 = this.randomArray(301 - 1);
-        this.index9 = this.randomArray(548 - 1);
+        this.index1_20 = this.randomArray(870);
+        this.index1_30 = this.randomArray(600);
+        this.index2 = this.randomArray(356);
+        this.index3 = this.randomArray(205);
+        this.index4 = this.randomArray(82);
+        this.index5 = this.randomArray(648);
+        this.index6 = this.randomArray(94);
+        this.index7 = this.randomArray(399);
+        this.index8_5 = this.randomArray(318);
+        this.index8_10 = this.randomArray(300);
+        this.index9 = this.randomArray(547);
         this.indexOptions4 = this.randomArray(5);
         this.indexOptions7_1 = this.randomArray(10);
         this.indexOptions7_2 = this.randomArray(8);
