@@ -125,8 +125,8 @@ class RandomizedQuestions {
                     for (let i = 0; i < list.length; i++) { // ヘッダごと読み込む
                         arr[i] = list[i].split(',');
                     }
-                    console.log("列数"+list.length);
-                    console.log("行数"+arr.length);
+                    console.log("行数"+list.length);
+                    console.log("列数"+arr[0].length);
                     console.log("試用"+arr[0][0]);
                 } else {
                     console.error(xhr.statusText);
