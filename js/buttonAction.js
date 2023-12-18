@@ -200,7 +200,7 @@ class RandomizedQuestions {
             let list = dataArr.split('\n');
             //帰ってきているレスポンスを配列に格納する
             for (let i = 1; i < list.length; i++) { // ヘッダを読み込まない
-                arr[i] = list[i].split(',');
+                arr[i-1] = list[i].split(',');
             }
         }
 
