@@ -26,6 +26,14 @@ img {
 	height: auto;
 }
 
+protect {    
+    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 header {    
     background-color: var(--maincolor-deep);
     color: var(--white);
