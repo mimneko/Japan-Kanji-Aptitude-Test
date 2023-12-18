@@ -1,16 +1,16 @@
 $(function () {
-    // ページに入ったとき（元々の問題文は空白にしといた方がいいかも？）
+    // ページを訪れたとき
     const randomQuestions = new RandomizedQuestions();
     function pageWrite() {
-        for (let i = 0; i < randomQuestions.sizeQAs(); i++) $(randomQuestions.getQ_id(i)).html(randomQuestions.getQuestion(i));
-        for (let i = 0; i < randomQuestions.sizeOs(); i++) $(randomQuestions.getO_id(i)).html(randomQuestions.getOption(i));
+        for (let i = 0; i < randomQuestions.getQuestionCount(); i++) $(randomQuestions.getQuestionId(i)).html(randomQuestions.getQuestion(i));
+        for (let i = 0; i < randomQuestions.getOptionCount(); i++) $(randomQuestions.getOptionId(i)).html(randomQuestions.getOption(i));
     }
     pageWrite();
 
     // 解答ボタン
-    for (let i = 0; i < randomQuestions.sizeQAs(); i++) {
-        $(randomQuestions.getA_id(i)).click(function () {
-            $(randomQuestions.getA_id(i)).html('<span class="answer">' + randomQuestions.getAnswer(i) + '</span>');
+    for (let i = 0; i < randomQuestions.getAnswerCount(); i++) {
+        $(randomQuestions.getAnswerId(i)).click(function () {
+            $(randomQuestions.getAnswerId(i)).html('<span class="answer">' + randomQuestions.getAnswer(i) + '</span>');
         })
     }
 
@@ -20,8 +20,8 @@ $(function () {
 
         randomQuestions.randomize();
         //console.log(randomQuestions.index);
-        for (let i = 0; i < randomQuestions.sizeQAs(); i++) {
-            $(randomQuestions.getA_id(i)).html('<span class="answer-btn">解答</span>');
+        for (let i = 0; i < randomQuestions.getAnswerCount(); i++) {
+            $(randomQuestions.getAnswerId(i)).html('<span class="answer-btn">解答</span>');
 
         }
         pageWrite();
