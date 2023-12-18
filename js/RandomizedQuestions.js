@@ -119,9 +119,9 @@ class RandomizedQuestions {
                 }
             }
         };
+        let array = arr;
         //リクエストの要求送信
         xhr.send(null);
-        let array = arr;
         return array;
     }
     /*
