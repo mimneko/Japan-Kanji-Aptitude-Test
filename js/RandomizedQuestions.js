@@ -91,20 +91,6 @@ class RandomizedQuestions {
         this.randomize();
     }
 
-    /*
-    importCsv(csvFile) {
-        // 仮テーブル
-        let array = [...Array(1000).keys()];
-        let arr = [...Array(10).keys()];
-
-        for (let i = 0; i < array.length; i++) {
-            for (let j = 0; j < arr.length; j++) arr[j] = i;
-            array[i] = arr.slice(0, arr.length);
-        }
-        
-        return array;
-    }
-    */
     importCsv(csvFile){
         /*
         https://notetoself-dy.com/javascript-csv/
@@ -140,189 +126,6 @@ class RandomizedQuestions {
         // コンソールに配列を出力
         return csvArray;
     }
-    /*
-    // https://uxmilk.jp/11586
-    //CSVファイルを読み込む関数getCSV()の定義
-    importCsv(csvFile){
-        var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
-        req.open("get", csvFile, true); // アクセスするファイルを指定
-        req.send(null); // HTTPリクエストの発行
-    	
-        // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
-        req.onload = function(){
-    	this.convertCSVtoArray(req.responseText); // 渡されるのは読み込んだCSVデータ
-        }
-    }
-     
-    // 読み込んだCSVデータを二次元配列に変換する関数convertCSVtoArray()の定義
-    convertCSVtoArray(str){ // 読み込んだCSVデータが文字列として渡される
-        var result = []; // 最終的な二次元配列を入れるための配列
-        var tmp = str.split("\n"); // 改行を区切り文字として行を要素とした配列を生成
-     
-        // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
-        for(var i=0;i<tmp.length;++i){
-            result[i] = tmp[i].split(',');
-        }
-     
-        alert(result[1][2]); // 300yen
-    }
-    */
-    /*
-    importCsv(csvFile) {
-        // 仮テーブル
-        let array = [...Array(1000).keys()];
-        let arr2 = [...Array(10).keys()];
-
-        for (let i = 0; i < array.length; i++) {
-            for (let j = 0; j < arr2.length; j++) arr2[j] = i;
-            array[i] = arr2.slice(0, arr2.length);
-        }
-
-        let arr = [];
-        // HTTPでファイルを読み込む
-        let xhr = new XMLHttpRequest();
-        //取得するファイルの設定
-        xhr.open("GET", csvFile, true);
-        //レスポンスの確認
-        xhr.onload = function (e) {
-            if (xhr.readyState === 4) {//4は完了
-                if (xhr.status === 200) {//Done or load
-                    //console.log(xhr.responseText);
-                    let responce = xhr.responseText;
-                    //CSVを配列に格納
-                    let list = responce.split('\n');
-                    //帰ってきているレスポンスを配列に格納する
-                    for (let i = 0; i < list.length; i++) { // ヘッダごと読み込む
-                        arr[i] = list[i].split(',');
-                        //console.log("j長さ: "+arr[0].length);
-                        for (let j = 0; j < arr[0].length; j++) {
-                            array[i][j] = arr[i][j];
-                            //console.log('正常');
-                        }
-                    }
-                    console.log("行数1:"+list.length);
-                    console.log("列数1:"+arr[0].length);
-                    console.log("試用1:"+arr[0][0]);
-                } else {
-                    console.error(xhr.statusText);
-                }
-            }
-        };
-        //リクエストの要求送信
-        xhr.send(null);
-        
-        return array;
-        
-    }
-    */
-    /*
-    importCsv(csvFile) {
-        // https://notetoself-dy.com/javascript-csv/
-
-        let arr = [];
-        // HTTPでファイルを読み込む
-        let xhr = new XMLHttpRequest();
-        //取得するファイルの設定
-        xhr.open("GET", csvFile, true);
-        //レスポンスの確認
-        xhr.onload = function (e) {
-            if (xhr.readyState === 4) {//4は完了
-                if (xhr.status === 200) {//Done or load
-                    //console.log(xhr.responseText);
-                    let responce = xhr.responseText;
-                    //CSVを配列に格納
-                    let list = responce.split('\n');
-                    //帰ってきているレスポンスを配列に格納する
-                    for (let i = 0; i < list.length; i++) { // ヘッダごと読み込む
-                        //arr[i] = list[i].split(',');
-                        arr.push(list[i].split(','));
-                    }
-                    //console.log("行数1:"+list.length);
-                    //console.log("列数1:"+arr[0].length);
-                    //console.log("試用1:"+arr[0][0]);
-                } else {
-                    console.error(xhr.statusText);
-                }
-            }
-        };
-        //console.log("列数2:"+arr[0].length);    // undefined
-        //console.log("試用2:"+arr[0][0]);    // undefined
-        let array = arr;
-        //let array = arr.shift();    // ヘッダを消す
-        //リクエストの要求送信
-        xhr.send(null);
-        return array;
-    }
-    */
-    /*
-    importCsv(csvFile) {
-        // https://notetoself-dy.com/javascript-csv/
-
-        let arr = [];
-        // HTTPでファイルを読み込む
-        let xhr = new XMLHttpRequest();
-        //取得するファイルの設定
-        xhr.open("GET", csvFile, true);
-        //レスポンスの確認
-        xhr.onload = function (e) {
-            if (xhr.readyState === 4) {//4は完了
-                if (xhr.status === 200) {//Done or load
-                    //console.log(xhr.responseText);
-                    let responce = xhr.responseText;
-                    //CSVを配列に格納
-                    let list = responce.split('\n');
-                    //帰ってきているレスポンスを配列に格納する
-                    for (let i = 1; i < list.length; i++) { // ヘッダを読み込まない
-                        arr[i-1] = list[i].split(',');
-                    }
-                    //console.log("【おためし】"+arr[0][1]);
-                } else {
-                    console.error(xhr.statusText);
-                }
-            }
-        };
-        let array = arr;
-        //リクエストの要求送信
-        xhr.send(null);
-        return array;
-    }
-    */
-    /*
-    importCsv(csvFile) {
-        // https://notetoself-dy.com/javascript-csv/
-
-        let arr = [];
-        // HTTPでファイルを読み込む
-        let xhr = new XMLHttpRequest();
-        //取得するファイルの設定
-        xhr.open("GET", csvFile, true);
-        //レスポンスの確認
-        xhr.onload = function (e) {
-            if (xhr.readyState === 4) {//4は完了
-                if (xhr.status === 200) {//Done or load
-                    //console.log(xhr.responseText);
-                    let responce = xhr.responseText;
-                    csvArr(responce);
-                } else {
-                    console.error(xhr.statusText);
-                }
-            }
-        };
-        //リクエストの要求送信
-        xhr.send(null);
-        
-        //CSVを配列に格納 dataArrはレスポンス
-        function csvArr(dataArr) {
-            let list = dataArr.split('\n');
-            //帰ってきているレスポンスを配列に格納する
-            for (let i = 1; i < list.length; i++) { // ヘッダを読み込まない
-                arr[i-1] = list[i].split(',');
-            }
-        }
-
-        return arr;
-    }
-    */
 
     sizeQAs() {
         return this.a_id.length;
@@ -332,15 +135,15 @@ class RandomizedQuestions {
         return this.o_id.length;
     }
 
-    getQ_id(i) {
+    getQuestionId(i) {
         return this.q_id[i];
     }
 
-    getA_id(i) {
+    getAnswerId(i) {
         return this.a_id[i];
     }
 
-    getO_id(i) {
+    getOptionId(i) {
         return this.o_id[i];
     }
 
@@ -393,21 +196,6 @@ class RandomizedQuestions {
         this.indexOptions7_2 = this.randomArray(8);
         this.indexOptions8 = this.randomArray(10);
 
-        /*
-        console.log("-----------");
-        var toString = Object.prototype.toString;
-        console.log(toString.call(this.tbl1_20));
-        console.log("-----------");
-        console.log(this.tbl1_20);
-        console.log(this.tbl1_20.length);
-        console.log(this.tbl1_20[0]);
-        console.log(this.tbl1_20[0][0]);
-        console.log("-----------");
-        //console.log(this.index1_20);
-        //console.log(this.index1_20[0]);
-        //console.log("-----------");
-        */
-        
         // 問題セット
         for (let i = 0; i < 20; i++) {
             let k = this.index1_20[i - 0];
