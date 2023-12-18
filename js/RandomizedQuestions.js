@@ -133,6 +133,7 @@ class RandomizedQuestions {
                         arr[i] = list[i].split(',');
                         for (let j = 0; j < arr[0].length; j++) {
                             array[i][j] = arr[i][j];
+                            if (i == 0 && j == 0) console.log('正常');
                         }
                     }
                 } else {
