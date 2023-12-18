@@ -133,7 +133,6 @@ class RandomizedQuestions {
                 }
             }
         };
-        console.log("行数2:"+list.length);
         console.log("列数2:"+arr[0].length);
         console.log("試用2:"+arr[0][0]);
         let array = arr;
