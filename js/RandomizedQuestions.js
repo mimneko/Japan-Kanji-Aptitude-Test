@@ -123,18 +123,19 @@ class RandomizedQuestions {
                     let list = responce.split('\n');
                     //帰ってきているレスポンスを配列に格納する
                     for (let i = 0; i < list.length; i++) { // ヘッダごと読み込む
-                        arr[i] = list[i].split(',');
+                        //arr[i] = list[i].split(',');
+                        arr.push(list[i].split(','););
                     }
-                    console.log("行数1:"+list.length);
-                    console.log("列数1:"+arr[0].length);
-                    console.log("試用1:"+arr[0][0]);
+                    //console.log("行数1:"+list.length);
+                    //console.log("列数1:"+arr[0].length);
+                    //console.log("試用1:"+arr[0][0]);
                 } else {
                     console.error(xhr.statusText);
                 }
             }
         };
-        console.log("列数2:"+arr[0].length);
-        console.log("試用2:"+arr[0][0]);
+        //console.log("列数2:"+arr[0].length);
+        //console.log("試用2:"+arr[0][0]);
         let array = arr;
         //let array = arr.shift();    // ヘッダを消す
         //リクエストの要求送信
