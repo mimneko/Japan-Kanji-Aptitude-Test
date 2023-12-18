@@ -101,20 +101,46 @@ class RandomizedQuestions {
             for (let j = 0; j < arr.length; j++) arr[j] = i;
             array[i] = arr.slice(0, arr.length);
         }
-
+        
         return array;
     }
     */
     importCsv(csvFile) {
         // 仮テーブル
         let array = [...Array(1000).keys()];
-        let arr = [...Array(10).keys()];
+        let arr2 = [...Array(10).keys()];
 
         for (let i = 0; i < array.length; i++) {
-            for (let j = 0; j < arr.length; j++) arr[j] = i;
-            array[i] = arr.slice(0, arr.length);
+            for (let j = 0; j < arr2.length; j++) arr2[j] = i;
+            array[i] = arr2.slice(0, arr2.length);
         }
 
+        let arr = [];
+        // HTTPでファイルを読み込む
+        let xhr = new XMLHttpRequest();
+        //取得するファイルの設定
+        xhr.open("GET", csvFile, true);
+        //レスポンスの確認
+        xhr.onload = function (e) {
+            if (xhr.readyState === 4) {//4は完了
+                if (xhr.status === 200) {//Done or load
+                    //console.log(xhr.responseText);
+                    let responce = xhr.responseText;
+                    //CSVを配列に格納
+                    let list = responce.split('\n');
+                    //帰ってきているレスポンスを配列に格納する
+                    for (let i = 0; i < list.length; i++) { // ヘッダごと読み込む
+                        arr[i] = list[i].split(',');
+                        for (let j = 0; j < arr[0].length; j++) {
+                            array[i][j] = arr[i][j];
+                        }
+                    }
+                } else {
+                    console.error(xhr.statusText);
+                }
+            }
+        };
+        
         return array;
         
     }
