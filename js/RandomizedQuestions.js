@@ -106,6 +106,7 @@ class RandomizedQuestions {
     }
     */
     importCsv(csvFile){
+        // https://kasumiblog.org/javascript-csv-array/
         // CSVファイルを取得
         let csv = new XMLHttpRequest();
          
