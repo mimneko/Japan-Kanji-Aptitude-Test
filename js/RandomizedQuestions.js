@@ -106,6 +106,11 @@ class RandomizedQuestions {
     }
     */
     importCsv(csvFile){
+        /*
+        https://notetoself-dy.com/javascript-csv/
+        https://uxmilk.jp/11586
+        のような読み込み方法だと、読み込んだ二次元配列tbl自体はlogできるものの、tbl[0]、tabl[0][0]などはundefinedとなってしまう。
+        */
         // https://kasumiblog.org/javascript-csv-array/
         // CSVファイルを取得
         let csv = new XMLHttpRequest();
@@ -129,13 +134,10 @@ class RandomizedQuestions {
         // 1行ごとに処理
         for (let i = 1; i < lines.length; ++i) {    // ヘッダを読み込まない
           let cells = lines[i].split(",");
-          if (cells.length != 1) {
-            csvArray.push(cells);
-          }
+          if (cells.length > 1) csvArray.push(cells);
         }
          
         // コンソールに配列を出力
-        console.log(csvArray);
         return csvArray;
     }
     /*
