@@ -127,7 +127,7 @@ class RandomizedQuestions {
         let lines = csv.responseText.split(/\r\n|\n/);
          
         // 1行ごとに処理
-        for (let i = 0; i < lines.length; ++i) {
+        for (let i = 1; i < lines.length; ++i) {    // ヘッダを読み込まない
           let cells = lines[i].split(",");
           if (cells.length != 1) {
             csvArray.push(cells);
