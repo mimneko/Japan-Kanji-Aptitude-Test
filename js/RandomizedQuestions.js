@@ -113,6 +113,7 @@ class RandomizedQuestions {
                     for (let i = 1; i < list.length; i++) { // ヘッダを読み込まない
                         arr[i-1] = list[i].split(',');
                     }
+                    console.log(arr[0]);
                 } else {
                     console.error(xhr.statusText);
                 }
