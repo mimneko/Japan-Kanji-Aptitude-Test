@@ -134,8 +134,8 @@ class RandomizedQuestions {
                 }
             }
         };
-        //console.log("列数2:"+arr[0].length);
-        //console.log("試用2:"+arr[0][0]);
+        //console.log("列数2:"+arr[0].length);    // undefined
+        //console.log("試用2:"+arr[0][0]);    // undefined
         let array = arr;
         //let array = arr.shift();    // ヘッダを消す
         //リクエストの要求送信
