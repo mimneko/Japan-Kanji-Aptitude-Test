@@ -105,6 +105,66 @@ class RandomizedQuestions {
         return array;
     }
     */
+    importCsv(csvFile){
+        // CSVファイルを取得
+        let csv = new XMLHttpRequest();
+         
+        // CSVファイルへのパス
+        csv.open("GET", csvFile, false);
+         
+        // csvファイル読み込み失敗時のエラー対応
+        try {
+          csv.send(null);
+        } catch (err) {
+          console.log(err);
+        }
+         
+        // 配列を定義
+        let csvArray = [];
+         
+        // 改行ごとに配列化
+        let lines = csv.responseText.split(/\r\n|\n/);
+         
+        // 1行ごとに処理
+        for (let i = 0; i < lines.length; ++i) {
+          let cells = lines[i].split(",");
+          if (cells.length != 1) {
+            csvArray.push(cells);
+          }
+        }
+         
+        // コンソールに配列を出力
+        console.log(csvArray);
+        return csvArray;
+    }
+    /*
+    // https://uxmilk.jp/11586
+    //CSVファイルを読み込む関数getCSV()の定義
+    importCsv(csvFile){
+        var req = new XMLHttpRequest(); // HTTPでファイルを読み込むためのXMLHttpRrequestオブジェクトを生成
+        req.open("get", csvFile, true); // アクセスするファイルを指定
+        req.send(null); // HTTPリクエストの発行
+    	
+        // レスポンスが返ってきたらconvertCSVtoArray()を呼ぶ	
+        req.onload = function(){
+    	this.convertCSVtoArray(req.responseText); // 渡されるのは読み込んだCSVデータ
+        }
+    }
+     
+    // 読み込んだCSVデータを二次元配列に変換する関数convertCSVtoArray()の定義
+    convertCSVtoArray(str){ // 読み込んだCSVデータが文字列として渡される
+        var result = []; // 最終的な二次元配列を入れるための配列
+        var tmp = str.split("\n"); // 改行を区切り文字として行を要素とした配列を生成
+     
+        // 各行ごとにカンマで区切った文字列を要素とした二次元配列を生成
+        for(var i=0;i<tmp.length;++i){
+            result[i] = tmp[i].split(',');
+        }
+     
+        alert(result[1][2]); // 300yen
+    }
+    */
+    /*
     importCsv(csvFile) {
         // 仮テーブル
         let array = [...Array(1000).keys()];
@@ -151,6 +211,7 @@ class RandomizedQuestions {
         return array;
         
     }
+    */
     /*
     importCsv(csvFile) {
         // https://notetoself-dy.com/javascript-csv/
