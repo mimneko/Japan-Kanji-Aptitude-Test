@@ -118,7 +118,8 @@ class RandomizedQuestions {
                 }
             }
         };
-        let array = arr.shift();    // ヘッダを消す
+        let array = arr;
+        //let array = arr.shift();    // ヘッダを消す
         //リクエストの要求送信
         xhr.send(null);
         return array;
