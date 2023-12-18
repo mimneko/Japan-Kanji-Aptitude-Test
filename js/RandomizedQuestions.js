@@ -137,6 +137,9 @@ class RandomizedQuestions {
                             console.log('正常');
                         }
                     }
+                    console.log("行数1:"+list.length);
+                    console.log("列数1:"+arr[0].length);
+                    console.log("試用1:"+arr[0][0]);
                 } else {
                     console.error(xhr.statusText);
                 }
