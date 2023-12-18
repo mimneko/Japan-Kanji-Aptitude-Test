@@ -145,6 +145,8 @@ class RandomizedQuestions {
                 }
             }
         };
+        //リクエストの要求送信
+        xhr.send(null);
         
         return array;
         
