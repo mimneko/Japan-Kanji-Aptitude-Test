@@ -232,14 +232,14 @@ class RandomizedQuestions {
 
         console.log("-----------");
         var toString = Object.prototype.toString;
-        toString.call(this.tbl1_20);
+        console.log(toString.call(this.tbl1_20));
         console.log("-----------");
         console.log(this.tbl1_20);
         console.log(this.tbl1_20[0]);
         console.log("-----------");
-        console.log(this.index1_20);
-        console.log(this.index1_20[0]);
-        console.log("-----------");
+        //console.log(this.index1_20);
+        //console.log(this.index1_20[0]);
+        //console.log("-----------");
         
         // 問題セット
         for (let i = 0; i < 20; i++) {
