@@ -131,9 +131,10 @@ class RandomizedQuestions {
                     //帰ってきているレスポンスを配列に格納する
                     for (let i = 0; i < list.length; i++) { // ヘッダごと読み込む
                         arr[i] = list[i].split(',');
-                        for (let j = 0; j < arr2.length; j++) {
+                        console.log("j長さ: "+arr[0].length);
+                        for (let j = 0; j < arr[0].length; j++) {
                             array[i][j] = arr[i][j];
-                            if (i == 0 && j == 0) console.log('正常');
+                            console.log('正常');
                         }
                     }
                 } else {
