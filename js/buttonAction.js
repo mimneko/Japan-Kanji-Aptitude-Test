@@ -140,7 +140,7 @@ class RandomizedQuestions {
 
     questions = [...Array(115).keys()];
     answers = [...Array(115).keys()];
-    options = [...Array(38).keys()];
+    options = [...Array(33).keys()];
 
     constructor() {
         this.tbl1_20 = this.importCsv('assets/1-20.csv');
