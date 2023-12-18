@@ -106,6 +106,20 @@ class RandomizedQuestions {
     }
     */
     importCsv(csvFile) {
+        // 仮テーブル
+        let array = [...Array(1000).keys()];
+        let arr = [...Array(10).keys()];
+
+        for (let i = 0; i < array.length; i++) {
+            for (let j = 0; j < arr.length; j++) arr[j] = i;
+            array[i] = arr.slice(0, arr.length);
+        }
+
+        return array;
+        
+    }
+    /*
+    importCsv(csvFile) {
         // https://notetoself-dy.com/javascript-csv/
 
         let arr = [];
@@ -142,6 +156,7 @@ class RandomizedQuestions {
         xhr.send(null);
         return array;
     }
+    */
     /*
     importCsv(csvFile) {
         // https://notetoself-dy.com/javascript-csv/
