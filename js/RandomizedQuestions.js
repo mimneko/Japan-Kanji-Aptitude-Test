@@ -105,7 +105,7 @@ class RandomizedQuestions {
         xhr.onload = function (e) {
             if (xhr.readyState === 4) {//4は完了
                 if (xhr.status === 200) {//Done or load
-                    console.log(xhr.responseText);
+                    //console.log(xhr.responseText);
                     let responce = xhr.responseText;
                     //CSVを配列に格納
                     let list = responce.split('\n');
@@ -121,8 +121,8 @@ class RandomizedQuestions {
         };
         //リクエストの要求送信
         xhr.send(null);
-        
-        return arr;
+        let array = arr;
+        return array;
     }
     /*
     importCsv(csvFile) {
