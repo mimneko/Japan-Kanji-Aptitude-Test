@@ -96,6 +96,7 @@ class RandomizedQuestions {
     importCsv(csvFile) {
         // https://notetoself-dy.com/javascript-csv/
 
+        let arr = [];
         // HTTPでファイルを読み込む
         let xhr = new XMLHttpRequest();
         //取得するファイルの設定
@@ -116,7 +117,6 @@ class RandomizedQuestions {
         xhr.send(null);
         
         //CSVを配列に格納 dataArrはレスポンス
-        let arr = [];
         function csvArr(dataArr) {
             let list = dataArr.split('\n');
             //帰ってきているレスポンスを配列に格納する
