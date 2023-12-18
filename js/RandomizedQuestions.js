@@ -63,6 +63,18 @@ class RandomizedQuestions {
     answers = [...Array(115).keys()];
     options = [...Array(33).keys()];
 
+    tbl1_20 = [];
+    tbl1_30 = [];
+    tbl2 = [];
+    tbl3 = [];
+    tbl4 = [];
+    tbl5 = [];
+    tbl6 = [];
+    tbl7 = [];
+    tbl8_5 = [];
+    tbl8_10 = [];
+    tbl9 = [];
+    
     constructor() {
         this.tbl1_20 = this.importCsv('assets/1-20.csv');
         this.tbl1_30 = this.importCsv('assets/1-30.csv');
