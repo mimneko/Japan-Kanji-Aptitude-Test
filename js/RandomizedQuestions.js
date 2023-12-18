@@ -237,6 +237,7 @@ class RandomizedQuestions {
         console.log("-----------");
         console.log(this.tbl1_20);
         console.log(this.tbl1_20[0]);
+        console.log(this.tbl1_20[0][0]);
         console.log("-----------");
         //console.log(this.index1_20);
         //console.log(this.index1_20[0]);
