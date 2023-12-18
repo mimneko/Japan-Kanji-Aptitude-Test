@@ -193,8 +193,9 @@ class RandomizedQuestions {
         };
         //リクエストの要求送信
         xhr.send(null);
-
+        
         //CSVを配列に格納 dataArrはレスポンス
+        let arr = [];
         function csvArr(dataArr) {
             let list = dataArr.split('\n');
             //帰ってきているレスポンスを配列に格納する
