@@ -127,11 +127,15 @@ class RandomizedQuestions {
         return csvArray;
     }
 
-    sizeQAs() {
-        return this.a_id.length;
+    getQuestionCount() {
+        return this.q_id.length;
     }
 
-    sizeOs() {
+    getAnswerCount() {
+        return this.a_id.length;
+    }
+    
+    getOptionCount() {
         return this.o_id.length;
     }
 
