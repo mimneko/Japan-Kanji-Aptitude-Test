@@ -110,6 +110,37 @@ class RandomizedQuestions {
                     //CSVを配列に格納
                     let list = responce.split('\n');
                     //帰ってきているレスポンスを配列に格納する
+                    for (let i = 0; i < list.length; i++) { // ヘッダごと読み込む
+                        arr[i] = list[i].split(',');
+                    }
+                } else {
+                    console.error(xhr.statusText);
+                }
+            }
+        };
+        let array = arr.shift();    // ヘッダを消す
+        //リクエストの要求送信
+        xhr.send(null);
+        return array;
+    }
+    /*
+    importCsv(csvFile) {
+        // https://notetoself-dy.com/javascript-csv/
+
+        let arr = [];
+        // HTTPでファイルを読み込む
+        let xhr = new XMLHttpRequest();
+        //取得するファイルの設定
+        xhr.open("GET", csvFile, true);
+        //レスポンスの確認
+        xhr.onload = function (e) {
+            if (xhr.readyState === 4) {//4は完了
+                if (xhr.status === 200) {//Done or load
+                    //console.log(xhr.responseText);
+                    let responce = xhr.responseText;
+                    //CSVを配列に格納
+                    let list = responce.split('\n');
+                    //帰ってきているレスポンスを配列に格納する
                     for (let i = 1; i < list.length; i++) { // ヘッダを読み込まない
                         arr[i-1] = list[i].split(',');
                     }
@@ -124,6 +155,7 @@ class RandomizedQuestions {
         xhr.send(null);
         return array;
     }
+    */
     /*
     importCsv(csvFile) {
         // https://notetoself-dy.com/javascript-csv/
