@@ -393,6 +393,7 @@ class RandomizedQuestions {
         this.indexOptions7_2 = this.randomArray(8);
         this.indexOptions8 = this.randomArray(10);
 
+        /*
         console.log("-----------");
         var toString = Object.prototype.toString;
         console.log(toString.call(this.tbl1_20));
@@ -405,6 +406,7 @@ class RandomizedQuestions {
         //console.log(this.index1_20);
         //console.log(this.index1_20[0]);
         //console.log("-----------");
+        */
         
         // 問題セット
         for (let i = 0; i < 20; i++) {
