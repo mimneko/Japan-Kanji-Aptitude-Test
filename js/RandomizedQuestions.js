@@ -197,6 +197,8 @@ class RandomizedQuestions {
         this.indexOptions7_2 = this.randomArray(8);
         this.indexOptions8 = this.randomArray(10);
 
+        console.log(this.questions);
+        console.log(this.tbl1_20);
         // 問題セット
         for (let i = 0; i < 20; i++) {
             let k = this.index1_20[i - 0];
