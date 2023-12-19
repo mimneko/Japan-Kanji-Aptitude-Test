@@ -62,13 +62,13 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
-/*
+
 main {
     text-align: center;
     width: auto;
     margin: 50px auto;
 }
-*/
+
 .btn {
     display: inline-block;
     cursor: pointer;
