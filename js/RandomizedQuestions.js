@@ -64,6 +64,7 @@ class RandomizedQuestions {
     options = [...Array(36).keys()];
 
     constructor() {
+        // csv読み込み
         this.tbl1_20 = this.importCsv('assets/1-20.csv');
         this.tbl1_30 = this.importCsv('assets/1-30.csv');
         this.tbl2 = this.importCsv('assets/2.csv');
@@ -76,7 +77,18 @@ class RandomizedQuestions {
         this.tbl8_10 = this.importCsv('assets/8-10.csv');
         this.tbl9 = this.importCsv('assets/9.csv');
 
-        console.log("行数"+this.tbl1_20.length);
+        // 問題数
+        $("#cnt1").text(this.tbl1_20.length+'+'+this.tbl1_30.length);
+        $("#cnt2").text(this.tbl2.length);
+        $("#cnt3").text(this.tbl3.length);
+        $("#cnt4").text(this.tbl4.length);
+        $("#cnt5").text(this.tbl5.length);
+        $("#cnt6").text(this.tbl6.length);
+        $("#cnt7").text(this.tbl7.length);
+        $("#cnt8").text(this.tbl8_5.length+'+'+this.tbl8_10.length);
+        $("#cnt9").text(this.tbl9.length);
+        
+        // ランダム要素
         this.randomize();
     }
 
@@ -181,17 +193,17 @@ class RandomizedQuestions {
     
     randomize() {
         // 乱数生成
-        this.index1_20 = this.randomArray(870);
-        this.index1_30 = this.randomArray(600);
-        this.index2 = this.randomArray(356);
-        this.index3 = this.randomArray(205);
-        this.index4 = this.randomArray(82);
-        this.index5 = this.randomArray(648);
-        this.index6 = this.randomArray(94);
-        this.index7 = this.randomArray(399);
-        this.index8_5 = this.randomArray(318);
-        this.index8_10 = this.randomArray(300);
-        this.index9 = this.randomArray(547);
+        this.index1_20 = this.randomArray(this.tbl1_20.length);
+        this.index1_30 = this.randomArray(this.tbl1_30.length);
+        this.index2 = this.randomArray(this.tbl2.length);
+        this.index3 = this.randomArray(this.tbl3.length);
+        this.index4 = this.randomArray(this.tbl4.length);
+        this.index5 = this.randomArray(this.tbl5.length);
+        this.index6 = this.randomArray(this.tbl6.length);
+        this.index7 = this.randomArray(this.tbl7.length);
+        this.index8_5 = this.randomArray(this.tbl8_5.length);
+        this.index8_10 = this.randomArray(this.tbl8_10.length);
+        this.index9 = this.randomArray(this.tbl9.length);
         this.indexOptions4 = this.randomArray(8);
         this.indexOptions7_1 = this.randomArray(10);
         this.indexOptions7_2 = this.randomArray(8);
