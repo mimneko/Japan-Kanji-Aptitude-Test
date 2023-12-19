@@ -62,7 +62,7 @@ table {
     border-spacing: 0;
     border-top: solid 1px var(--white);
 }
-
+/*
 table tr:nth-child(2n) {
     background: var(--light-gray);
 }
@@ -80,7 +80,7 @@ table td {
     padding: 10px;
     border-bottom: solid 1px var(--white);
 }
-
+*/
 .btn {
     display: inline-block;
     cursor: pointer;
@@ -109,7 +109,7 @@ h2 {
 }
 
 h4 {
-    border-left: solid var(--maincolor-deep) 2px;
+    border-left: solid var(--maincolor-deep) 3px;
     padding: 14px 12px;
     clear: both;
     text-align: left;
