@@ -15,7 +15,8 @@
     --color-string: var(--black);
 
     /* 定数 */
-    --screen-padding: 15px;
+    --screen-padding-tb: 20px;
+    --screen-padding-lr: 15px;
 }
 
 /* https://www.sejuku.net/blog/99964 */
@@ -140,19 +141,23 @@ ol li {
 .wrap {
     width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
-    padding-left: var(--screen-padding);
-    padding-right: var(--screen-padding);
     background-color: var(--white);
+    padding-top: var(--screen-padding-tb);
+    padding-bottom: var(--screen-padding-tb);
+    padding-left: var(--screen-padding-lr);
+    padding-right: var(--screen-padding-lr);
+    margin: 0 auto;
 }
 
 @media screen and (max-width:767px) {
     .wrap {
         width: 100%;
         max-width: inherit;
-        padding-left: var(--screen-padding);
-        padding-right: var(--screen-padding);
         background-color: var(--white);
+        padding-top: var(--screen-padding-tb);
+        padding-bottom: var(--screen-padding-tb);
+        padding-left: var(--screen-padding-lr);
+        padding-right: var(--screen-padding-lr);
     }
 }
 
