@@ -1,7 +1,7 @@
 :root {
     /* 色 */
-    --navy: //#1a3260;
-    --light-navy: #c2d1ee;
+    --navy: #1e4f66;	/* #1a3260; */
+    --light-navy: #86c4d2;	/* #c2d1ee; */
     --white: #fafafa;
     --light-gray: #cccdd2;
     --gray: #e7e8ea;
