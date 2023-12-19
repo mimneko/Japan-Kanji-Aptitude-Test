@@ -17,6 +17,8 @@
     /* 定数 */
     --screen-padding-tb: 20px;
     --screen-padding-lr: 25px;
+    --font-size-normal: 18px;
+    --font-size-small: 12px;
 }
 
 /* https://www.sejuku.net/blog/99964 */
@@ -43,6 +45,8 @@ header {
     text-align: center;
     vertical-align : middle;
     font-size: 36px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 body {
@@ -83,7 +87,7 @@ table {
     box-shadow: 0px 5px var(--color-main-deep);
     border-radius: 3px;
     color: var(--color-main-deep);
-    font-size: 18px;
+    font-size: var(--font-size-normal);
 }
 
 .btn:active {
@@ -113,7 +117,7 @@ h4 {
 .annotation {
     text-align: right;
     color: var(--black);
-    font-size: 12px;
+    font-size: var(--font-size-small);
 }
 	
 .empha {
@@ -136,12 +140,10 @@ p {
 ol {
     text-align: left;
     margin-left: 10px;
-
 }
 	
 ol li {
     padding-left: 15px;
-
 }
 
 /* https://note.com/ryotodo/n/n58c452d3660c */
@@ -176,15 +178,8 @@ ol li {
     background-color: var(--color-main-light);
     border-radius: 3px;
     color: var(--color-main-deep);
-    font-size: 18px;
+    font-size: var(--font-size-normal);
     border: solid 1px var(--color-main-light);
-
-    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
 }
 
 .answer {
@@ -193,14 +188,8 @@ ol li {
     padding: 8px 30px;
     border-radius: 3px;
     color: var(--color-accent);
-    font-size: 18px;
+    font-size: var(--font-size-normal);
     border: solid 1px var(--color-accent);
-
-    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .options {
