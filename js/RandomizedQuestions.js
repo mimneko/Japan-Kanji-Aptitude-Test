@@ -76,6 +76,7 @@ class RandomizedQuestions {
         this.tbl8_10 = this.importCsv('assets/8-10.csv');
         this.tbl9 = this.importCsv('assets/9.csv');
 
+        console.log("行数"+this.tbl1_20.length);
         this.randomize();
     }
 
