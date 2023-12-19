@@ -144,6 +144,11 @@ ol {
     margin-left: 10px;
 
 }
+	
+ol li {
+    padding-left: 20px;
+
+}
 
 /* https://note.com/ryotodo/n/n58c452d3660c */
 .wrap {
