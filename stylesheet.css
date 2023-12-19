@@ -34,14 +34,6 @@ header {
     font-size: 36px;
 }
 
-head {
-    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 body {
     width: 100%;
     margin: 0;
@@ -49,6 +41,12 @@ body {
 
     /* https://saycon.co.jp/portal-for-newcomer/html-lesson/html-lesson2 */
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, sans-serif;
+
+    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 main {
