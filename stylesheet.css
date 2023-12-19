@@ -20,20 +20,21 @@
 }
 
 /* https://www.sejuku.net/blog/99964 */
-* {
-	float: none;
-	position: static;
+* {    
+    float: none;    
+    position: static;
 }
 
-img {
-	max-width: 100%;
-	height: auto;
+img {    
+    max-width: 100%;    
+    height: auto;
 }
 
-.mount {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--color-mount);
+.mount {    
+    /* https://nansystem.com/css-full-page-background-color/ */    
+    width: 100vw;    
+    /*height: 100vh;*/    
+    background-color: var(--color-mount);
 }
 
 header {    
