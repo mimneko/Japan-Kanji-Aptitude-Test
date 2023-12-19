@@ -49,6 +49,16 @@ header {
     margin-bottom: 0px;
 }
 
+fotter {    
+    background-color: var(--color-main-deep);
+    color: var(--white);
+    text-align: center;
+    vertical-align : middle;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 body {
     width: 100%;
     margin: 0;
