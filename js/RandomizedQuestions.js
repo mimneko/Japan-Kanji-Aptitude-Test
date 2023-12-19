@@ -49,7 +49,7 @@ class RandomizedQuestions {
         "#a9-1", "#a9-2", "#a9-3", "#a9-4", "#a9-5", "#a9-6", "#a9-7", "#a9-8", "#a9-9", "#a9-10",
     ];
 
-    // 33
+    // 36
     o_id = [
         "#o4-1", "#o4-2", "#o4-3", "#o4-4", "#o4-5", "#o4-6", "#o4-7", "#o4-8",
 
@@ -61,7 +61,7 @@ class RandomizedQuestions {
 
     questions = [...Array(115).keys()];
     answers = [...Array(115).keys()];
-    options = [...Array(33).keys()];
+    options = [...Array(36).keys()];
 
     constructor() {
         this.tbl1_20 = this.importCsv('assets/1-20.csv');
@@ -170,9 +170,14 @@ class RandomizedQuestions {
         return array;
     }
 
-    sortOption(){
-        //
+    sortOption(min, max){
+        let arr = this.options.slice(min, max);
+        arr.sort();
+        for (let i = min; i < max; i++) {
+            this.options[i] = arr[i-min];
+        }
     }
+    
     randomize() {
         // 乱数生成
         this.index1_20 = this.randomArray(870);
@@ -190,13 +195,8 @@ class RandomizedQuestions {
         this.indexOptions7_1 = this.randomArray(10);
         this.indexOptions7_2 = this.randomArray(8);
         this.indexOptions8 = this.randomArray(10);
-        /*
-        this.indexOptions4 = this.sortOption(0,8);
-        this.indexOptions7_1 = this.sortOption(10);
-        this.indexOptions8 = this.sortOption(10);
-        */
         
-        // 問題セット
+        // 問題・解答をセット
         for (let i = 0; i < 20; i++) {
             let k = this.index1_20[i - 0];
             this.questions[i] = this.tbl1_20[k][0] + '<span class="empha">' + this.tbl1_20[k][1] + '</span>' + this.tbl1_20[k][2];
@@ -287,6 +287,11 @@ class RandomizedQuestions {
             this.questions[i] = this.tbl9[k][0] + '<span class="empha">' + this.tbl9[k][1] + '</span>' + this.tbl9[k][2];
             this.answers[i] = this.tbl9[k][3];
         }
+
+        // 選択肢をソート
+        this.sortOption(0,8);
+        this.sortOption(8,18);
+        this.sortOption(26,36);
     }
 
 }
