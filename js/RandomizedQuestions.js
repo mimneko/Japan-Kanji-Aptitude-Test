@@ -170,6 +170,9 @@ class RandomizedQuestions {
         return array;
     }
 
+    sortOption(){
+        //
+    }
     randomize() {
         // 乱数生成
         this.index1_20 = this.randomArray(870);
@@ -187,6 +190,11 @@ class RandomizedQuestions {
         this.indexOptions7_1 = this.randomArray(10);
         this.indexOptions7_2 = this.randomArray(8);
         this.indexOptions8 = this.randomArray(10);
+        /*
+        this.indexOptions4 = this.sortOption(0,8);
+        this.indexOptions7_1 = this.sortOption(10);
+        this.indexOptions8 = this.sortOption(10);
+        */
         
         // 問題セット
         for (let i = 0; i < 20; i++) {
