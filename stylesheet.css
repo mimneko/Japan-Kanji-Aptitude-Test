@@ -30,6 +30,12 @@ img {
 	height: auto;
 }
 
+.mount {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-mount);
+}
+
 header {    
     background-color: var(--color-main-deep);
     color: var(--white);
