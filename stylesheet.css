@@ -153,7 +153,7 @@ ol li {
     margin: 50px auto;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:1000px) {/* 767px */
     .wrap {
         width: 100%;
         max-width: inherit;
