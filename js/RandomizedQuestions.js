@@ -223,11 +223,13 @@ class RandomizedQuestions {
             let k = this.index4[i - 50];
             this.questions[i] = this.tbl4[k][0] + '(　)' + this.tbl4[k][1] + '<br>' + this.tbl4[k][2] + '(　)' + this.tbl4[k][3];
             this.answers[i] = this.tbl4[k][4];
-            this.options[this.indexOptions4[i - 50] + 0] = this.tbl4[k][5];
+            //this.options[this.indexOptions4[i - 50] + 0] = this.tbl4[k][5];
+            this.options[i - 50] = this.tbl4[k][5];
         }
         for (let i = 5; i < 8; i++) {
             let k = this.index4[i];
-            this.options[this.indexOptions4[i] + 0] = this.tbl4[k][5];
+            //this.options[this.indexOptions4[i] + 0] = this.tbl4[k][5];
+            this.options[i] = this.tbl4[k][5];
         }
         for (let i = 55; i < 75; i++) {
             let k = this.index5[i - 55];
@@ -244,11 +246,13 @@ class RandomizedQuestions {
             if (Math.random() > 0.5) {
                 this.questions[i] = '□□' + this.tbl7[k][3];
                 this.answers[i] = this.tbl7[k][1];
-                this.options[this.indexOptions7_1[i - 80] + 8] = this.tbl7[k][2];
+                //this.options[this.indexOptions7_1[i - 80] + 8] = this.tbl7[k][2];
+                this.options[i - 72] = this.tbl7[k][2];
             } else {
                 this.questions[i] = this.tbl7[k][1] + '□□';
                 this.answers[i] = this.tbl7[k][3];
-                this.options[this.indexOptions7_1[i - 80] + 8] = this.tbl7[k][4];
+                //this.options[this.indexOptions7_1[i - 80] + 8] = this.tbl7[k][4];
+                this.options[i - 72] = this.tbl7[k][4];
             }
         }
         for (let i = 90; i < 95; i++) {
@@ -274,13 +278,15 @@ class RandomizedQuestions {
             let k = this.index8_5[i - 95];
             this.questions[i] = this.tbl8_5[k][0];
             this.answers[i] = this.tbl8_5[k][1];
-            this.options[this.indexOptions8[i - 95] + 26] = this.tbl8_5[k][2];
+            //this.options[this.indexOptions8[i - 95] + 26] = this.tbl8_5[k][2];
+            this.options[i - 74] = this.tbl8_5[k][2];
         }
         for (let i = 100; i < 105; i++) {
             let k = this.index8_10[i - 100];
             this.questions[i] = this.tbl8_10[k][0];
             this.answers[i] = this.tbl8_10[k][1];
-            this.options[this.indexOptions8[i - 95] + 26] = this.tbl8_10[k][2];
+            //this.options[this.indexOptions8[i - 95] + 26] = this.tbl8_10[k][2];
+            this.options[i - 69] = this.tbl8_10[k][2];
         }
         for (let i = 105; i < 115; i++) {
             let k = this.index9[i - 105];
