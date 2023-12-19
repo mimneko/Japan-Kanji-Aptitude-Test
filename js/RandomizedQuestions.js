@@ -257,9 +257,9 @@ class RandomizedQuestions {
         for (let i = 18; i < 21; i++) {
             let k = this.index7[i];
             if (Math.random() > 0.5) {
-                this.options[this.indexOptions7_2[i - 10] + 18] = '<span class="underline">' + this.tbl7[k][1] + '</span>' + this.tbl7[k][3];
+                this.options[this.indexOptions7_2[i - 13] + 18] = '<span class="underline">' + this.tbl7[k][1] + '</span>' + this.tbl7[k][3];
             } else {
-                this.options[this.indexOptions7_2[i - 10] + 18] = this.tbl7[k][1] + '<span class="underline">' + this.tbl7[k][3] + '</span>';
+                this.options[this.indexOptions7_2[i - 13] + 18] = this.tbl7[k][1] + '<span class="underline">' + this.tbl7[k][3] + '</span>';
             }
         }
         for (let i = 95; i < 100; i++) {
