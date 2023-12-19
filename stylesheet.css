@@ -150,7 +150,7 @@ ol li {
     padding-left: var(--screen-padding-lr);
     padding-right: var(--screen-padding-lr);
     border-radius: 15px;
-    margin: 50 auto;
+    margin: 50px auto;
 }
 
 @media screen and (max-width:767px) {
@@ -163,7 +163,7 @@ ol li {
         padding-left: var(--screen-padding-lr);
         padding-right: var(--screen-padding-lr);
         border-radius: 0px;
-        margin: 0 auto;
+        margin: 50px auto;
     }
 }
 
