@@ -34,8 +34,7 @@ img {
 
 .mount {    
     /* https://nansystem.com/css-full-page-background-color/ */    
-    width: 100vw;    
-    /*height: 100vh;*/    
+    width: 100vw;
     background-color: var(--color-mount);
 }
 
@@ -45,9 +44,6 @@ header {
     text-align: center;
     vertical-align : middle;
     font-size: 36px;
-/*
-    padding-top: 0px;
-    padding-bottom: 0px;*/
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -66,21 +62,13 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
-
+/*
 main {
     text-align: center;
     width: auto;
     margin: 50px auto;
 }
-
-table {
-    width: 100%;
-    text-align: center;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border-top: solid 1px var(--white);
-}
-
+*/
 .btn {
     display: inline-block;
     cursor: pointer;
@@ -147,6 +135,8 @@ ol {
 }
 	
 ol li {
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 15px;
 }
 
@@ -199,9 +189,4 @@ ol li {
 .options {
     border: solid 1px var(--black);
     padding: 10px;
-}
-
-ol li {
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
