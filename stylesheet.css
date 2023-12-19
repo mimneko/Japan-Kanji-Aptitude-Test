@@ -1,15 +1,16 @@
 :root {
     /* 色 */
-    --navy: #1A3260;
-    --light-navy: #C2D1EE;
+    --navy: #1a3260;
+    --light-navy: #c2d1ee;
     --white: #fafafa;
-    --light-gray: #CCCDD2;
-    --gray: #E7E8EA;
-    --black: #2C2C2C;
-    --orange: #EA5506;
+    --light-gray: #cccdd2;
+    --gray: #e7e8ea;
+    --black: #2c2c2c;
+    --orange: #ea5506;
     --maincolor-deep: var(--navy);
     --maincolor-light: var(--light-navy);
     --accentcolor: var(--orange);
+    --backgounrd-color: #ff0000;
 
     /* 定数 */
     --screen-padding: 15px;
@@ -38,6 +39,7 @@ body {
     width: 100%;
     margin: 0;
     font-size: 20px;
+    backgound-color: var(--backgounrd-color);
 
     /* https://saycon.co.jp/portal-for-newcomer/html-lesson/html-lesson2 */
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, sans-serif;
@@ -62,25 +64,7 @@ table {
     border-spacing: 0;
     border-top: solid 1px var(--white);
 }
-/*
-table tr:nth-child(2n) {
-    background: var(--light-gray);
-}
 
-table tr:nth-child(2n+1) {
-    background: var(--gray);
-}
-
-table tr:nth-child(1) {
-    background-color: var(--maincolor-deep);
-    color: var(--white);
-}
-
-table td {
-    padding: 10px;
-    border-bottom: solid 1px var(--white);
-}
-*/
 .btn {
     display: inline-block;
     cursor: pointer;
@@ -155,8 +139,9 @@ ol li {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
-	padding-left: var(--screen-padding);
-	padding-right: var(--screen-padding);
+    padding-left: var(--screen-padding);
+    padding-right: var(--screen-padding);
+    background-color: var(--white);
 }
 
 @media screen and (max-width:767px) {
@@ -165,6 +150,7 @@ ol li {
         max-width: inherit;
         padding-left: var(--screen-padding);
         padding-right: var(--screen-padding);
+        background-color: var(--white);
     }
 }
 
