@@ -116,6 +116,11 @@ h4 {
     font-size: 20px;
 }
 
+.annotation {
+    color: var(--gray);
+    font-size: 12px;
+}
+	
 .empha {
     text-decoration:underline solid var(--black) 3px;
     font-weight: bold;
