@@ -146,6 +146,7 @@ ol li {
     padding-bottom: var(--screen-padding-tb);
     padding-left: var(--screen-padding-lr);
     padding-right: var(--screen-padding-lr);
+    border-radius: 10px;
     margin: 0 auto;
 }
 
@@ -158,6 +159,7 @@ ol li {
         padding-bottom: var(--screen-padding-tb);
         padding-left: var(--screen-padding-lr);
         padding-right: var(--screen-padding-lr);
+        border-radius: 10px;
     }
 }
 
