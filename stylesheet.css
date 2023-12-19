@@ -7,10 +7,12 @@
     --gray: #e7e8ea;
     --black: #2c2c2c;
     --orange: #ea5506;
-    --maincolor-deep: var(--navy);
-    --maincolor-light: var(--light-navy);
-    --accentcolor: var(--orange);
-    --backgounrd-color: #d8b888;
+    --beige: #d8b888;
+    --color-main-deep: var(--navy);
+    --color-main-light: var(--light-navy);
+    --color-accent: var(--orange);
+    --color-mount: var(--beige);
+    --color-string: var(--black);
 
     /* 定数 */
     --screen-padding: 15px;
@@ -28,7 +30,7 @@ img {
 }
 
 header {    
-    background-color: var(--maincolor-deep);
+    background-color: var(--color-main-deep);
     color: var(--white);
     text-align: center;
     vertical-align : middle;
@@ -39,7 +41,7 @@ body {
     width: 100%;
     margin: 0;
     font-size: 20px;
-    backgound-color: var(--backgounrd-color);
+    backgound-color: var(--color-mount);
 
     /* https://saycon.co.jp/portal-for-newcomer/html-lesson/html-lesson2 */
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, sans-serif;
@@ -69,10 +71,10 @@ table {
     display: inline-block;
     cursor: pointer;
     padding: 8px 30px;
-    background-color: var(--maincolor-light);
-    box-shadow: 0px 5px var(--maincolor-deep);
+    background-color: var(--color-main-light);
+    box-shadow: 0px 5px var(--color-main-deep);
     border-radius: 3px;
-    color: var(--maincolor-deep);
+    color: var(--color-main-deep);
     font-size: 18px;
 }
 
@@ -85,7 +87,7 @@ table {
 /* https://saruwakakun.com/html-css/reference/list-style-type */
 h2 {
     background: var(--gray);
-    border-left: solid var(--maincolor-deep) 5px;
+    border-left: solid var(--color-main-deep) 5px;
     padding: 14px 12px;
     border-bottom: solid 3px var(--light-gray);
     clear: both;
@@ -93,7 +95,7 @@ h2 {
 }
 
 h4 {
-    border-left: solid var(--maincolor-deep) 3px;
+    border-left: solid var(--color-main-deep) 3px;
     padding: 14px 12px;
     clear: both;
     text-align: left;
@@ -158,11 +160,11 @@ ol li {
     display: inline-block;
     cursor: pointer;
     padding: 8px 30px;
-    background-color: var(--maincolor-light);
+    background-color: var(--color-main-light);
     border-radius: 3px;
-    color: var(--maincolor-deep);
+    color: var(--color-main-deep);
     font-size: 18px;
-    border: solid 1px var(--maincolor-light);
+    border: solid 1px var(--color-main-light);
 
     /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
     -webkit-user-select: none;
@@ -177,9 +179,9 @@ ol li {
     display: inline-block;
     padding: 8px 30px;
     border-radius: 3px;
-    color: var(--accentcolor);
+    color: var(--color-accent);
     font-size: 18px;
-    border: solid 1px var(--accentcolor);
+    border: solid 1px var(--color-accent);
 
     /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
     -webkit-user-select: none;
