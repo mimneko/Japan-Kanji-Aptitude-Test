@@ -34,7 +34,7 @@ img {
 
 .mount {    
     /* https://nansystem.com/css-full-page-background-color/ */
-    /*width: 100vw;*/
+    width: 100%;
     background-color: var(--color-mount);
 }
 
