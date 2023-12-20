@@ -16,13 +16,10 @@
     
     /* 定数 */
     --screen-padding-tb: 20px;
+    --screen-padding-lr: 25px;
     --font-size-normal: 18px;
     --font-size-small: 12px;
     --screen-max-width: 800px;
-}
-
-:root {
-    --screen-padding-lr: 25px;
 }
 
 @media screen and (width < 450px) {
