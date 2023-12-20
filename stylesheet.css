@@ -13,7 +13,9 @@
     --color-accent: var(--orange);
     --color-mount: var(--beige);
     --color-string: var(--black);
+}
 
+:root {
     /* 定数 */
     --screen-padding-tb: 20px;
     --screen-padding-lr: 25px;
@@ -22,6 +24,16 @@
     --screen-max-width: 800px;
 }
 
+@media screen and (max-width: 450px) {
+    :root {
+    /* 定数 */
+    --screen-padding-tb: 20px;
+    --screen-padding-lr: 15px;
+    --font-size-normal: 18px;
+    --font-size-small: 12px;
+    --screen-max-width: 800px;
+}
+}
 /* 
 スマホ
 タブレット
