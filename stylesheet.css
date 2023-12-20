@@ -69,7 +69,7 @@ img {
     padding-left: var(--screen-padding-lr);
     padding-right: var(--screen-padding-lr);
     border-radius: 15px;
-    margin: 50px auto;
+    margin: 0px auto;
 }
 /* スマホ画面なら、--screen-paddingを小さくする */
 /* それぞれのmax-widthと、@mediaが効いていない気がする */
@@ -83,7 +83,7 @@ img {
         padding-left: var(--screen-padding-lr);
         padding-right: var(--screen-padding-lr);
         border-radius: 0px;
-        margin: 25px auto;
+        margin: 0px auto;
     }
 }
 
