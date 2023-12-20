@@ -46,6 +46,8 @@ header {
     font-size: 36px;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 footer {    
@@ -56,6 +58,8 @@ footer {
     font-size: 12px;
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 body {
