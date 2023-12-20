@@ -25,7 +25,7 @@
     --screen-padding-lr: 25px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (width < 450px) {
     :root {
         /* 定数 */
         --screen-padding-lr: 15px;
@@ -44,12 +44,12 @@
     float: none;    
     position: static;
 }
-/*
+
 img {    
     max-width: 100%;    
     height: auto;
 }
-*/
+
 .mount {    
     /* https://nansystem.com/css-full-page-background-color/ */
     width: 100%;
@@ -73,7 +73,7 @@ img {
 }
 /* スマホ画面なら、--screen-paddingを小さくする */
 /* それぞれのmax-widthと、@mediaが効いていない気がする */
-@media screen and (max-width: 800px) {/* var()使えない */
+@media screen and (width < 800px) {/* var()使えない */
     .wrap {
         width: calc(100% - var(--screen-padding-lr) * 2);
         max-width: calc(var(--screen-max-width) - var(--screen-padding-lr) * 2);/*inherit;*/
