@@ -181,7 +181,7 @@ ol li {
 
 @media screen and (max-width:var(--screen-max-width)) {/* 767px */
     .wrap {
-        width: 100%;
+        width: 300px;/*100%*/
         max-width: inherit;
         background-color: var(--white);
         padding-top: var(--screen-padding-tb);
