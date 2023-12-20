@@ -13,26 +13,23 @@
     --color-accent: var(--orange);
     --color-mount: var(--beige);
     --color-string: var(--black);
-}
-
-:root {
+    
     /* 定数 */
     --screen-padding-tb: 20px;
-    --screen-padding-lr: 25px;
     --font-size-normal: 18px;
     --font-size-small: 12px;
     --screen-max-width: 800px;
+}
+
+:root {
+    --screen-padding-lr: 25px;
 }
 
 @media screen and (max-width: 450px) {
     :root {
-    /* 定数 */
-    --screen-padding-tb: 20px;
-    --screen-padding-lr: 15px;
-    --font-size-normal: 18px;
-    --font-size-small: 12px;
-    --screen-max-width: 800px;
-}
+        /* 定数 */
+        --screen-padding-lr: 15px;
+    }
 }
 /* 
 スマホ
@@ -79,7 +76,7 @@ img {
 @media screen and (max-width: 800px) {/* var()使えない */
     .wrap {
         width: calc(100% - var(--screen-padding-lr) * 2);
-        max-width: 300px;/*inherit;*/
+        max-width: calc(var(--screen-max-width) - var(--screen-padding-lr) * 2);/*inherit;*/
         background-color: var(--white);
         padding-top: var(--screen-padding-tb);
         padding-bottom: var(--screen-padding-tb);
