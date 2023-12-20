@@ -44,6 +44,8 @@ img {
 .logo {
     text-align: center;
     vertical-align : middle;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 header, footer {    
