@@ -41,11 +41,31 @@ img {
     padding-bottom: 30px;
 }
 
-.logo {
-    text-align: center;
-    vertical-align : middle;
-    margin-left: 20px;
-    margin-right: 20px;
+/* https://note.com/ryotodo/n/n58c452d3660c */
+.wrap {
+    width: 100%;
+    max-width: calc(var(--screen-max-width) - var(--screen-padding-lr) * 2);
+    background-color: var(--white);
+    padding-top: var(--screen-padding-tb);
+    padding-bottom: var(--screen-padding-tb);
+    padding-left: var(--screen-padding-lr);
+    padding-right: var(--screen-padding-lr);
+    border-radius: 15px;
+    margin: 50px auto;
+}
+
+@media screen and (max-width:var(--screen-max-width)) {/* 767px */
+    .wrap {
+        width: 300px;/*100%*//*ここいじれば何とかなる？*/
+        max-width: inherit;
+        background-color: var(--white);
+        padding-top: var(--screen-padding-tb);
+        padding-bottom: var(--screen-padding-tb);
+        padding-left: var(--screen-padding-lr);
+        padding-right: var(--screen-padding-lr);
+        border-radius: 0px;
+        margin: 50px auto;
+    }
 }
 
 header, footer {    
@@ -91,23 +111,6 @@ main {
     */
 }
 
-.btn {
-    display: inline-block;
-    cursor: pointer;
-    padding: 8px 30px;
-    background-color: var(--color-main-light);
-    box-shadow: 0px 5px var(--color-main-deep);
-    border-radius: 3px;
-    color: var(--color-main-deep);
-    font-size: var(--font-size-normal);
-}
-
-.btn:active {
-    position: relative;
-    top: 5px;
-    box-shadow: none;
-}
-
 h1 {
     text-align: left;
 }
@@ -130,27 +133,6 @@ h3 {
     font-size: 20px;
 }
 
-.annotation {
-    text-align: right;
-    color: var(--black);
-    font-size: var(--font-size-small);
-    margin-top: -10px;
-    margin-bottom: -12px;
-}
-	
-.empha {
-    text-decoration:underline solid var(--black) 3px;
-    font-weight: bold;
-    /* https://note.com/wordpress1234/n/nf98a776a7cf5 */
-    -webkit-text-decoration:underline solid var(--black) 3px;
-}
-
-.underline {
-    text-decoration:underline solid var(--black) 2px;
-    /* https://note.com/wordpress1234/n/nf98a776a7cf5 */
-    -webkit-text-decoration:underline solid var(--black) 2px;
-}
-
 p {
     text-align: left;
 }
@@ -166,31 +148,28 @@ ol li {
     padding-left: 15px;
 }
 
-/* https://note.com/ryotodo/n/n58c452d3660c */
-.wrap {
-    width: 100%;
-    max-width: calc(var(--screen-max-width) - var(--screen-padding-lr) * 2);
-    background-color: var(--white);
-    padding-top: var(--screen-padding-tb);
-    padding-bottom: var(--screen-padding-tb);
-    padding-left: var(--screen-padding-lr);
-    padding-right: var(--screen-padding-lr);
-    border-radius: 15px;
-    margin: 50px auto;
+.logo {
+    text-align: center;
+    vertical-align : middle;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-@media screen and (max-width:var(--screen-max-width)) {/* 767px */
-    .wrap {
-        width: 300px;/*100%*//*ここいじれば何とかなる？*/
-        max-width: inherit;
-        background-color: var(--white);
-        padding-top: var(--screen-padding-tb);
-        padding-bottom: var(--screen-padding-tb);
-        padding-left: var(--screen-padding-lr);
-        padding-right: var(--screen-padding-lr);
-        border-radius: 0px;
-        margin: 50px auto;
-    }
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 30px;
+    background-color: var(--color-main-light);
+    box-shadow: 0px 5px var(--color-main-deep);
+    border-radius: 3px;
+    color: var(--color-main-deep);
+    font-size: var(--font-size-normal);
+}
+
+.btn:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
 }
 
 .answer-btn {
@@ -212,6 +191,27 @@ ol li {
     color: var(--color-accent);
     font-size: var(--font-size-normal);
     border: solid 1px var(--color-accent);
+}
+
+.annotation {
+    text-align: right;
+    color: var(--black);
+    font-size: var(--font-size-small);
+    margin-top: -10px;
+    margin-bottom: -15px;
+}
+	
+.empha {
+    text-decoration:underline solid var(--black) 3px;
+    font-weight: bold;
+    /* https://note.com/wordpress1234/n/nf98a776a7cf5 */
+    -webkit-text-decoration:underline solid var(--black) 3px;
+}
+
+.underline {
+    text-decoration:underline solid var(--black) 2px;
+    /* https://note.com/wordpress1234/n/nf98a776a7cf5 */
+    -webkit-text-decoration:underline solid var(--black) 2px;
 }
 
 .options {
