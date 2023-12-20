@@ -135,7 +135,7 @@ h3 {
     color: var(--black);
     font-size: var(--font-size-small);
     margin-top: -10px;
-    margin-bottom: -10px;
+    margin-bottom: -12px;
 }
 	
 .empha {
@@ -181,7 +181,7 @@ ol li {
 
 @media screen and (max-width:var(--screen-max-width)) {/* 767px */
     .wrap {
-        width: 300px;/*100%*/
+        width: 300px;/*100%*//*ここいじれば何とかなる？*/
         max-width: inherit;
         background-color: var(--white);
         padding-top: var(--screen-padding-tb);
