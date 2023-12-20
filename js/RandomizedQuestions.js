@@ -292,7 +292,7 @@ class RandomizedQuestions {
             this.questions[i] = this.tbl8_5[k][0];
             this.answers[i] = this.tbl8_5[k][1];
             //this.options[this.indexOptions8[i - 95] + 26] = this.tbl8_5[k][2];
-            this.options[i - 74] = this.tbl8_5[k][2];
+            this.options[i - 69] = this.tbl8_5[k][2];
         }
         for (let i = 100; i < 105; i++) {
             let k = this.index8_10[i - 100];
