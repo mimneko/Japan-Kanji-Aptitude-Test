@@ -52,11 +52,7 @@ img {
     padding-left: var(--screen-padding-lr);
     padding-right: var(--screen-padding-lr);
     border-radius: 15px;
-    /*margin: 50px auto;*/
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 50px auto;
 }
 
 @media screen and (max-width:var(--screen-max-width)) {/* 767px */
@@ -69,11 +65,7 @@ img {
         padding-left: var(--screen-padding-lr);
         padding-right: var(--screen-padding-lr);
         border-radius: 0px;
-        /*margin: 50px auto;*/
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin: 50px auto;
     }
 }
 
