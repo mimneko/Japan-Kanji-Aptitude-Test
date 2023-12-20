@@ -57,7 +57,7 @@ img {
 
 @media screen and (max-width:var(--screen-max-width)) {/* 767px */
     .wrap {
-        width: 100%/*ここいじれば何とかなる？*/
+        width: calc(100% - var(--screen-padding-lr) * 2)/*ここいじれば何とかなる？*/
         max-width: 300px;/*inherit;*/
         background-color: var(--white);
         padding-top: var(--screen-padding-tb);
