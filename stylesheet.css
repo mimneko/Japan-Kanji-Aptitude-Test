@@ -36,6 +36,8 @@ img {
     /* https://nansystem.com/css-full-page-background-color/ */
     width: 100%;
     background-color: var(--color-mount);
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 header {    
