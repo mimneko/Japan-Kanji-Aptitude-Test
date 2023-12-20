@@ -68,8 +68,7 @@ img {
     border-radius: 15px;
     margin: 0px auto;
 }
-/* スマホ画面なら、--screen-paddingを小さくする */
-/* それぞれのmax-widthと、@mediaが効いていない気がする */
+
 @media screen and (width < 800px) {/* var()使えない */
     .wrap {
         width: calc(100% - var(--screen-padding-lr) * 2);
@@ -216,7 +215,7 @@ ol li {
     margin-top: -10px;
     margin-bottom: -15px;
 }
-	
+/* スマホで下線表示されない */
 .empha {
     text-decoration:underline solid var(--black) 3px;
     font-weight: bold;
@@ -225,7 +224,7 @@ ol li {
 }
 
 .underline {
-    text-decoration:underline solid var(--black) 2px;
+    /*text-decoration:underline solid var(--black) 2px;*//*ためしに消してみる*/
     /* https://note.com/wordpress1234/n/nf98a776a7cf5 */
     -webkit-text-decoration:underline solid var(--black) 2px;
 }
