@@ -81,7 +81,7 @@ header, footer {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+/* スマホ画面で、上下の位置が中央になるように */
 header {
     font-size: 36px;
 }
