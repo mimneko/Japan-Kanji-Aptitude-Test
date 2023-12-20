@@ -104,6 +104,10 @@ main {
     box-shadow: none;
 }
 
+h1 {
+    text-align: left;
+}
+
 /* https://saruwakakun.com/html-css/reference/list-style-type */
 h2 {
     background: var(--gray);
