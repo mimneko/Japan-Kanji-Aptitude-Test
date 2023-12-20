@@ -54,7 +54,8 @@ img {
     border-radius: 15px;
     margin: 50px auto;
 }
-/* それぞれのmax-widthと、@mediaが効いていない気がする*/
+/* スマホ画面なら、--screen-paddingを小さくする */
+/* それぞれのmax-widthと、@mediaが効いていない気がする */
 @media screen and (max-width:var(--screen-max-width)) {/* 767px */
     .wrap {
         width: calc(100% - var(--screen-padding-lr) * 2);
