@@ -44,7 +44,7 @@ img {
 
 /* https://note.com/ryotodo/n/n58c452d3660c */
 .wrap {
-    width: 100%;
+    width: calc(100% - var(--screen-padding-lr) * 2);
     max-width: calc(var(--screen-max-width) - var(--screen-padding-lr) * 2);
     background-color: var(--white);
     padding-top: var(--screen-padding-tb);
@@ -54,10 +54,10 @@ img {
     border-radius: 15px;
     margin: 50px auto;
 }
-
+/* それぞれのmax-widthと、@mediaが効いていない気がする*/
 @media screen and (max-width:var(--screen-max-width)) {/* 767px */
     .wrap {
-        width: calc(100% - var(--screen-padding-lr) * 2)/*ここいじれば何とかなる？*/
+        width: calc(100% - var(--screen-padding-lr) * 2);
         max-width: 300px;/*inherit;*/
         background-color: var(--white);
         padding-top: var(--screen-padding-tb);
