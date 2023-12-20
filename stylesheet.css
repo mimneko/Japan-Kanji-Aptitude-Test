@@ -49,7 +49,7 @@ header {
     margin-bottom: 0px;
 }
 
-fotter {    
+footer {    
     background-color: var(--color-main-deep);
     color: var(--white);
     text-align: center;
@@ -154,7 +154,7 @@ ol li {
 /* https://note.com/ryotodo/n/n58c452d3660c */
 .wrap {
     width: 100%;
-    max-width: 1000px;
+    max-width: calc(1000px - var(--screen-padding-lr) * 2);
     background-color: var(--white);
     padding-top: var(--screen-padding-tb);
     padding-bottom: var(--screen-padding-tb);
