@@ -44,12 +44,12 @@
     float: none;    
     position: static;
 }
-
+/*
 img {    
     max-width: 100%;    
     height: auto;
 }
-
+*/
 .mount {    
     /* https://nansystem.com/css-full-page-background-color/ */
     width: 100%;
