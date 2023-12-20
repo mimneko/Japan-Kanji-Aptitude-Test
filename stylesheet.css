@@ -19,6 +19,7 @@
     --screen-padding-lr: 25px;
     --font-size-normal: 18px;
     --font-size-small: 12px;
+    --screen-max-width: 900px;
 }
 
 /* https://www.sejuku.net/blog/99964 */
@@ -166,7 +167,7 @@ ol li {
 /* https://note.com/ryotodo/n/n58c452d3660c */
 .wrap {
     width: 100%;
-    max-width: calc(1000px - var(--screen-padding-lr) * 2);
+    max-width: calc(var(--screen-max-width) - var(--screen-padding-lr) * 2);
     background-color: var(--white);
     padding-top: var(--screen-padding-tb);
     padding-bottom: var(--screen-padding-tb);
@@ -176,7 +177,7 @@ ol li {
     margin: 50px auto;
 }
 
-@media screen and (max-width:1000px) {/* 767px */
+@media screen and (max-width:var(--screen-max-width)) {/* 767px */
     .wrap {
         width: 100%;
         max-width: inherit;
