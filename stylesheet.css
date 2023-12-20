@@ -22,6 +22,14 @@
     --screen-max-width: 800px;
 }
 
+/* 
+スマホ
+タブレット
+パソコン（狭ウィンドウ）
+
+パソコン（広ウィンドウ）
+*/
+
 /* https://www.sejuku.net/blog/99964 */
 * {    
     float: none;    
