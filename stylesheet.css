@@ -40,6 +40,11 @@ img {
     padding-bottom: 30px;
 }
 
+.logo {
+    text-align: center;
+    vertical-align : middle;
+}
+
 header, footer {    
     background-color: var(--color-main-deep);
     color: var(--white);
