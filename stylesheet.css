@@ -40,7 +40,7 @@ img {
     padding-bottom: 30px;
 }
 
-header {    
+header, footer {    
     background-color: var(--color-main-deep);
     color: var(--white);
     text-align: center;
@@ -52,16 +52,12 @@ header {
     padding-bottom: 20px;
 }
 
-footer {    
-    background-color: var(--color-main-deep);
-    color: var(--white);
-    text-align: center;
-    vertical-align : middle;
+header {
+    font-size: 36px;
+}
+
+footer {
     font-size: 12px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 body {
