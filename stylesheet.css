@@ -64,7 +64,7 @@ img {
 }
 /* スマホ画面なら、--screen-paddingを小さくする */
 /* それぞれのmax-widthと、@mediaが効いていない気がする */
-@media screen and (max-width:var(--screen-max-width)) {/* 767px */
+@media screen and (max-width: 800px) {/* var()使えない */
     .wrap {
         width: calc(100% - var(--screen-padding-lr) * 2);
         max-width: 300px;/*inherit;*/
