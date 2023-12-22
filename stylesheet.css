@@ -217,18 +217,18 @@ ol li {
     margin-top: -10px;
     margin-bottom: -15px;
 }
-/* スマホで下線表示されない */
+
 .empha {
-    text-decoration:underline solid var(--black) 3px;
     font-weight: bold;
+    text-decoration:underline solid var(--black) 3px;
     /* https://note.com/wordpress1234/n/nf98a776a7cf5 */
-    -webkit-text-decoration:underline solid var(--black) 3px;
+    -webkit-text-decoration: underline var(--black);
 }
 
 .underline {
-    /*text-decoration:underline solid var(--black) 2px;*//*ためしに消してみる*/
+    text-decoration:underline solid var(--black) 2px;
     /* https://note.com/wordpress1234/n/nf98a776a7cf5 */
-    -webkit-text-decoration: underline var(--black) 2px;
+    -webkit-text-decoration: underline var(--black);
 }
 
 .options {
