@@ -3,8 +3,9 @@
     --navy: #1a3260;
     --light-navy: #c2d1ee;
     --white: #fafafa;
-    --light-gray: #cccdd2;
+    --gray-light: #cccdd2;
     --gray: #e7e8ea;
+    --gray-deep: #747474;
     --black: #2c2c2c;
     --orange: #ea5506;
     --beige: #d8b888;
@@ -13,7 +14,7 @@
     --color-accent: var(--orange);
     --color-mount: var(--beige);
     --color-string: var(--black);
-    
+
     /* 定数 */
     --screen-padding-tb: 20px;
     --screen-padding-lr: 25px;
@@ -28,6 +29,7 @@
         --screen-padding-lr: 15px;
     }
 }
+
 /* 
 スマホ
 タブレット
@@ -37,19 +39,19 @@
 */
 
 /* https://www.sejuku.net/blog/99964 */
-* {    
-    float: none;    
+* {
+    float: none;
     position: static;
 }
 
-img {       
+img {
     display: block;
     /*vertical-align: bottom;*/
-    max-width: 100%;    
+    max-width: 100%;
     height: auto;
 }
 
-.mount {    
+.mount {
     /* https://nansystem.com/css-full-page-background-color/ */
     width: 100%;
     background-color: var(--color-mount);
@@ -71,10 +73,13 @@ img {
     margin: 0px auto;
 }
 
-@media screen and (width < 800px) {/* var()使えない */
+@media screen and (width < 800px) {
+
+    /* var()使えない */
     .wrap {
         width: calc(100% - var(--screen-padding-lr) * 2);
-        max-width: calc(var(--screen-max-width) - var(--screen-padding-lr) * 2);/*inherit;*/
+        max-width: calc(var(--screen-max-width) - var(--screen-padding-lr) * 2);
+        /*inherit;*/
         background-color: var(--white);
         padding-top: var(--screen-padding-tb);
         padding-bottom: var(--screen-padding-tb);
@@ -85,17 +90,19 @@ img {
     }
 }
 
-header, footer {    
+header,
+footer {
     background-color: var(--color-main-deep);
     color: var(--white);
     text-align: center;
-    vertical-align : middle;
+    vertical-align: middle;
     font-size: 36px;
     margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 /* スマホ画面で、上下の位置が中央になるように */
 header {
     font-size: 36px;
@@ -114,12 +121,6 @@ body {
 
     /* https://saycon.co.jp/portal-for-newcomer/html-lesson/html-lesson2 */
     font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, sans-serif;
-
-    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 main {
@@ -127,6 +128,7 @@ main {
 }
 
 h1 {
+    margin: 26px 0px;
     text-align: left;
 }
 
@@ -135,7 +137,7 @@ h2 {
     background: var(--gray);
     border-left: solid var(--color-main-deep) 5px;
     padding: 14px 12px;
-    border-bottom: solid 3px var(--light-gray);
+    border-bottom: solid 3px var(--gray-light);
     clear: both;
     text-align: left;
 }
@@ -151,12 +153,12 @@ h3 {
 p {
     text-align: left;
 }
-	
+
 ol {
     text-align: left;
     margin-left: 10px;
 }
-	
+
 ol li {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -165,8 +167,18 @@ ol li {
 
 .logo {
     text-align: center;
-    vertical-align : middle;
+    vertical-align: middle;
     margin: 0px auto;
+}
+
+.manuscript {
+    margin: 26px 0px;
+
+    /* 文字をコピー不可にする。https://www.aya-kikaku.work/3964/ */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .btn {
@@ -174,16 +186,9 @@ ol li {
     cursor: pointer;
     padding: 8px 30px;
     background-color: var(--color-main-light);
-    box-shadow: 0px 5px var(--color-main-deep);
     border-radius: 3px;
     color: var(--color-main-deep);
     font-size: var(--font-size-normal);
-}
-
-.btn:active {
-    position: relative;
-    top: 5px;
-    box-shadow: none;
 }
 
 .answer-btn {
@@ -217,13 +222,13 @@ ol li {
 
 .empha {
     font-weight: bold;
-    text-decoration:underline solid var(--black) 3px;
+    text-decoration: underline solid var(--black) 3px;
     /* https://note.com/wordpress1234/n/nf98a776a7cf5 */
     -webkit-text-decoration: underline var(--black);
 }
 
 .underline {
-    text-decoration:underline solid var(--black) 2px;
+    text-decoration: underline solid var(--black) 2px;
     /* https://note.com/wordpress1234/n/nf98a776a7cf5 */
     -webkit-text-decoration: underline var(--black);
 }
@@ -231,4 +236,77 @@ ol li {
 .options {
     border: solid 1px var(--black);
     padding: 10px;
+}
+
+/**
+ * ***************************************
+ * パンくずリスト
+ * ***************************************
+ *
+ * パンくずリストコンテナ
+ */
+.breadcrumb {
+    display: none;
+    /* モバイルで非表示 */
+}
+
+@media (min-width: 800px) {
+
+    /* PCだけスタイル適用 */
+    .breadcrumb {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    /**
+     * ---------------------------------------
+     * パンくずリストモジュール
+     */
+
+    .bc-nav {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .bc-nav li {
+        font-size: var(--font-size-small);
+        color: var(--gray-deep);
+    }
+
+    .bc-nav li::after {
+        padding: 0 5px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f054";
+    }
+
+    .bc-nav li:last-child::after {
+        content: "";
+    }
+
+    .bc-nav li a {
+        color: var(--gray-deep);
+    }
+
+}
+
+.attribute {
+    font-size: 12px;
+    /* https://mamewaza.com/support/blog/howto-use-flex.html */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    color: var(--color-main-deep);
+    padding: 5px 0px;
+}
+
+.category,
+.tag {
+    border: 1px solid var(--color-main-deep);
+    border-radius: 3px;
+    padding: 2px;
 }
