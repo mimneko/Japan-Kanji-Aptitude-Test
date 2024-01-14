@@ -70,7 +70,7 @@ img {
     padding-left: var(--screen-padding-lr);
     padding-right: var(--screen-padding-lr);
     border-radius: 15px;
-    margin: 0px auto;
+    margin: 20px auto;
 }
 
 @media screen and (width < 800px) {
