@@ -58,8 +58,6 @@ img {
     text-align: center;
     padding-top: 0px;
     padding-bottom: 0px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 /* https://note.com/ryotodo/n/n58c452d3660c */
@@ -191,6 +189,10 @@ ol li {
     border-radius: 3px;
     color: var(--color-main-deep);
     font-size: var(--font-size-normal);
+}
+
+.reset {
+    text-decoration: none;
 }
 
 .answer-btn {
