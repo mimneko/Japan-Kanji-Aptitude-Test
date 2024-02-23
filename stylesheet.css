@@ -56,8 +56,8 @@ img {
     width: 100%;
     background-color: var(--color-mount);
     text-align: center;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* https://note.com/ryotodo/n/n58c452d3660c */
@@ -70,7 +70,7 @@ img {
     padding-left: var(--screen-padding-lr);
     padding-right: var(--screen-padding-lr);
     border-radius: 15px;
-    margin: 20px auto;
+    margin: 0px auto;
 }
 
 @media screen and (width < 800px) {
@@ -86,7 +86,6 @@ img {
         padding-left: var(--screen-padding-lr);
         padding-right: var(--screen-padding-lr);
         border-radius: 0px;
-        margin: 0px auto;
     }
 }
 
@@ -191,8 +190,9 @@ ol li {
     font-size: var(--font-size-normal);
 }
 
-.reset {
+.reset a {
     text-decoration: none;
+    color: var(--black);
 }
 
 .answer-btn {
