@@ -1,2 +1,2 @@
-# Japan-Kanji-Aptitude-Test
-漢検準1級勉強用Webサイト
+# kanken-semi1
+漢検準１級勉強用Webサイト
